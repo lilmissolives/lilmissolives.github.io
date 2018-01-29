@@ -162,7 +162,7 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 20px;
+    font-size: 400%;
     font-weight: bold;
     /* color: white; */
     /* padding: 1em 1.6em; */
@@ -174,6 +174,8 @@ a.pure-button-primary {
     /* color: white; */
     letter-spacing: 0.05em;
     opacity: 0.8;
+    font-size: 150%;
+    line-height: 80px;
 }
 
 /*
@@ -251,14 +253,14 @@ a.pure-button-primary {
 
     /* We decrease the width of the .splash, since we have more width
     to work with */
-    .splash {
+    /* .splash {
         width: 50%;
         height: 50%;
-    }
+    } */
 
-    .splash-head {
+    /* .splash-head {
         font-size: 250%;
-    }
+    } */
 
 
     /* We remove the border-separator assigned to .l-box-lrg */
