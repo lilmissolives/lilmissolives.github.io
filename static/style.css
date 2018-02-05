@@ -304,3 +304,7 @@ a.pure-button-primary {
   text-decoration: underline;
 }
 
+.portfolio img {
+  padding: 1em;
+}
+
