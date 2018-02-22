@@ -291,7 +291,12 @@ a.pure-button-primary {
  */
  
  .placeholder-img {
-   height: 100px;
+   height: 200px;
+ }
+ 
+ .placeholder-img#icon-palette {
+   height: 180px;
+   margin-top: 20px;
  }
 
 .splash-subhead a, .credits a {
@@ -308,3 +313,11 @@ a.pure-button-primary {
   padding: 1em;
 }
 
+#what-i-do h2#title {
+  margin-bottom: -30px;
+}
+
+#what-i-do p {
+  width: 80%;
+  display: inline-block;
+}
