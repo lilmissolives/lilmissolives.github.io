@@ -190,7 +190,10 @@ a.pure-button-primary {
     min-height: 12%;
     z-index: 2;
     background: white;
+}
 
+.content-wrapper#project {
+  top: 15%;
 }
 
 /* We want to give the content area some more padding */
@@ -298,7 +301,7 @@ a.pure-button-primary {
    height: 180px;
    margin-top: 20px;
  }
-
+ 
 .splash-subhead a, .credits a {
   color: inherit;
   font-weight: bold;
@@ -320,4 +323,12 @@ a.pure-button-primary {
 #what-i-do p {
   width: 80%;
   display: inline-block;
+}
+
+div#project img {
+  width: 100%;
+}
+
+div#project div.l-box {
+  padding: 50px;
 }
