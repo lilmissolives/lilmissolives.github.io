@@ -289,6 +289,21 @@ a.pure-button-primary {
     }
 }*/
 
+/* unused, but maybe useful */
+/* .label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: #2d3e50;
+} */
+
 /*
  * BEGIN CUSTOM CSS
  */
@@ -331,4 +346,13 @@ div#project img {
 
 div#project div.l-box {
   padding: 50px;
+}
+
+.project-description p {
+  padding: 20px 0px 20px 0px;
+  font-size: 1.1em;
+}
+
+.project-description img#behance {
+  width: 40px;
 }
