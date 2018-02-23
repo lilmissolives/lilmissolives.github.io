@@ -431,6 +431,7 @@ div#project div.l-box {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+/* disabled */
 /* @media (max-width: 72em) {
   .gallery-column {
     flex: 50%;
