@@ -1,0 +1,5 @@
+- Higher res red logo for Anh Hong
+- Text for front page: design, illustration, photo
+- Thumbnail image for traffic video
+- Minimal about me page
+- Minimal contact (send email?)
