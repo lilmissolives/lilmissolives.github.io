@@ -340,7 +340,7 @@ a.pure-button-primary {
   display: inline-block;
 }
 
-div#project img {
+div#project img.carousel-cell {
   width: 100%;
 }
 
@@ -353,8 +353,17 @@ div#project div.l-box {
   font-size: 1.1em;
 }
 
-.project-description img#behance {
+.project-description a {
+  text-decoration: none;
+}
+
+.project-description img.logo {
   width: 40px;
+}
+
+.project-description img.logo#facebook {
+  opacity: 0.55;
+  margin-left: 5px;
 }
 
 .project-container {
