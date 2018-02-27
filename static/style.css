@@ -350,12 +350,12 @@ div#project div.l-box {
 
 .project-description p, .bio p {
   padding: 20px 0px 20px 0px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 @media screen and (min-width: 64em) {
   .bio {
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -417,6 +417,10 @@ div#project div.l-box {
 
 #portrait {
   text-align: center;
+}
+
+#portrait img {
+  width: 250px;
 }
 
 @media screen and (min-width: 64em) {
