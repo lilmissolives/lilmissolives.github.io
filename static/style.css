@@ -427,6 +427,16 @@ div#project div.l-box {
 @media screen and (min-width: 64em) {
   #portrait {
     text-align: right;
+    position: relative;
+  }
+
+  #portrait img {
+    position: absolute;
+    margin: auto;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 
