@@ -12,11 +12,11 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
-    font-family: 'Karla';
+    font-family: 'Raleway';
 }
 
 .pure-g [class *= "pure-u"] {
-  font-family: 'Karla';
+  font-family: 'Raleway';
 }
 
 h1,
@@ -185,12 +185,14 @@ a.pure-button-primary {
  */
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
-    position: absolute;
+    /* position: absolute;
     top: 100px;
-    width: 100%;
+    width: 100%; */
     /* min-height: 12%; */
-    z-index: 2;
-    background: white;
+    /* z-index: 2;
+    background: white; */
+    max-width: 1200px;
+    margin: auto;
 }
 
 .content-wrapper#project {
@@ -308,15 +310,81 @@ a.pure-button-primary {
 /*
  * BEGIN CUSTOM CSS
  */
- 
- .placeholder-img {
-   height: 200px;
- }
- 
- .placeholder-img#icon-palette {
-   height: 180px;
-   margin-top: 20px;
- }
+
+#header {
+  text-align: center;
+}
+
+#header #topNav nav ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+@media screen and (min-width: 64em) {
+  #header {
+    height: 100px;
+    margin: 50px 50px 0 50px;
+  }
+  
+  #header #logo {
+    float: left;
+  }
+  
+  #header #topNav {
+    float: right;
+  }
+
+  #header #topNav nav {
+    float: left;
+  }
+
+  #header #topNav nav ul {
+    list-style-type: none;
+  }
+
+  #header #topNav nav li {
+    float: left;
+    position: relative;
+    margin-left: 30px;
+  }
+}
+
+#header #logo a {
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 0.08em;
+}
+
+#header #logo a:hover {
+  color: #666;
+}
+
+#header #topNav nav li a {
+  text-decoration: none;
+  color: #999;
+  letter-spacing: 0.05em;
+}
+
+#header #topNav nav li a:hover {
+  color: #222;
+}
+
+#header #topNav nav li a.active {
+  color: #222;
+}
+
+.placeholder-img {
+  height: 200px;
+}
+
+.placeholder-img#icon-palette {
+  height: 180px;
+  margin-top: 20px;
+}
  
 .splash-subhead a, .credits a {
   color: inherit;
@@ -369,11 +437,12 @@ div#project div.l-box {
 .project-title {
   text-align: center;
   padding: 1em;
+  letter-spacing: 0.05em;
 }
 
 #project-grid {
-  max-width: 1200px;
-  margin: auto;
+  /* max-width: 1200px;
+  margin: auto; */
 }
 
 #project-thumb {
