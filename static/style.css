@@ -385,11 +385,18 @@ div#project div.l-box {
   height: 300px;
   object-fit: cover;
   width: 300px;
+  transition: 0.5s ease;
 }
 
 #project-thumb a {
   text-decoration: none;
   color: inherit;
+}
+
+#project-thumb a:hover img {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.5;
 }
 
 .project-description p, .bio p {
