@@ -342,6 +342,8 @@ a.pure-button-primary {
 
   #header #topNav nav ul {
     list-style-type: none;
+    line-height: inherit;
+    font-size: inherit;
   }
 
   #header #topNav nav li {
