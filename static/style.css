@@ -195,8 +195,15 @@ a.pure-button-primary {
     margin: auto;
 }
 
+.header-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .content-wrapper#project {
   top: 15%;
+  /* allow the project showcase to be bigger */
+  max-width: 1600px;
 }
 
 /* We want to give the content area some more padding */
@@ -214,6 +221,11 @@ a.pure-button-primary {
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
     color: white;
+}
+
+.content-subhead {
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
 /* This is the class used for the dark-background areas. */
@@ -359,6 +371,7 @@ a.pure-button-primary {
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 0.08em;
+  transition: 0.3s ease;
 }
 
 #header #logo a:hover {
@@ -369,6 +382,7 @@ a.pure-button-primary {
   text-decoration: none;
   color: #999;
   letter-spacing: 0.05em;
+  transition: 0.3s ease;
 }
 
 #header #topNav nav li a:hover {
@@ -487,11 +501,20 @@ div#project div.l-box {
 
 .project-description img.logo {
   width: 40px;
+  transition: 0.5s ease;
+}
+
+.project-description img.logo:hover {
+  opacity: 0.5;
 }
 
 .project-description img.logo#facebook {
   opacity: 0.55;
   margin-left: 5px;
+}
+
+.project-description img.logo#facebook:hover {
+  opacity: 0.3;
 }
 
 .project-container {
