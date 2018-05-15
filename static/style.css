@@ -12,11 +12,11 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
-    font-family: 'Karla';
+    font-family: 'Raleway';
 }
 
 .pure-g [class *= "pure-u"] {
-  font-family: 'Karla';
+  font-family: 'Raleway';
 }
 
 h1,
@@ -185,16 +185,25 @@ a.pure-button-primary {
  */
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
-    position: absolute;
-    top: 66%;
-    width: 100%;
-    min-height: 12%;
-    z-index: 2;
-    background: white;
+    /* position: absolute;
+    top: 100px;
+    width: 100%; */
+    /* min-height: 12%; */
+    /* z-index: 2;
+    background: white; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-wrapper {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .content-wrapper#project {
   top: 15%;
+  /* allow the project showcase to be bigger */
+  max-width: 1600px;
 }
 
 /* We want to give the content area some more padding */
@@ -214,10 +223,15 @@ a.pure-button-primary {
     color: white;
 }
 
+.content-subhead {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background: #2d3e50;
-    color: #aaa;
+    /* background: #2d3e50; */
+    /* color: #aaa; */
 }
 
 /* This is the class used for the footer */
@@ -308,15 +322,85 @@ a.pure-button-primary {
 /*
  * BEGIN CUSTOM CSS
  */
- 
- .placeholder-img {
-   height: 200px;
- }
- 
- .placeholder-img#icon-palette {
-   height: 180px;
-   margin-top: 20px;
- }
+
+#header {
+  text-align: center;
+}
+
+#header #topNav nav ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+@media screen and (min-width: 64em) {
+  #header {
+    height: 100px;
+    margin: 50px 50px 0 50px;
+  }
+  
+  #header #logo {
+    float: left;
+  }
+  
+  #header #topNav {
+    float: right;
+  }
+
+  #header #topNav nav {
+    float: left;
+  }
+
+  #header #topNav nav ul {
+    list-style-type: none;
+    line-height: inherit;
+    font-size: inherit;
+  }
+
+  #header #topNav nav li {
+    float: left;
+    position: relative;
+    margin-left: 30px;
+  }
+}
+
+#header #logo a {
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 0.08em;
+  transition: 0.3s ease;
+}
+
+#header #logo a:hover {
+  color: #666;
+}
+
+#header #topNav nav li a {
+  text-decoration: none;
+  color: #999;
+  letter-spacing: 0.05em;
+  transition: 0.3s ease;
+}
+
+#header #topNav nav li a:hover {
+  color: #222;
+}
+
+#header #topNav nav li a.active {
+  color: #222;
+}
+
+.placeholder-img {
+  height: 200px;
+}
+
+.placeholder-img#icon-palette {
+  height: 180px;
+  margin-top: 20px;
+}
  
 .splash-subhead a, .credits a {
   color: inherit;
@@ -332,6 +416,11 @@ a.pure-button-primary {
   padding: 1em;
 } */
 
+#what-i-do {
+  margin-top: 100px;
+  position: relative;
+}
+
 #what-i-do h2#title {
   margin-bottom: -30px;
 }
@@ -339,6 +428,18 @@ a.pure-button-primary {
 #what-i-do p {
   width: 80%;
   display: inline-block;
+  color: #333333;
+}
+
+#what-i-do .ethan {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -50;
+  right: -50;
+  background-image: url('../img/olives-pattern.png');
+  z-index: -1;
+  filter: blur(5px);
 }
 
 div#project img.carousel-cell {
@@ -347,6 +448,40 @@ div#project img.carousel-cell {
 
 div#project div.l-box {
   padding: 50px;
+}
+
+.project-title {
+  text-align: center;
+  padding: 1em;
+  letter-spacing: 0.05em;
+}
+
+#project-grid {
+  /* max-width: 1200px;
+  margin: auto; */
+}
+
+#project-thumb {
+  text-align: center;
+}
+
+#project-thumb img {
+  display: inline;
+  height: 300px;
+  object-fit: cover;
+  width: 300px;
+  transition: 0.5s ease;
+}
+
+#project-thumb a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#project-thumb a:hover img {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.5;
 }
 
 .project-description p, .bio p {
@@ -366,6 +501,11 @@ div#project div.l-box {
 
 .project-description img.logo {
   width: 40px;
+  transition: 0.5s ease;
+}
+
+.project-description img.logo:hover {
+  opacity: 0.5;
 }
 
 .project-description img.logo#facebook {
@@ -373,12 +513,16 @@ div#project div.l-box {
   margin-left: 5px;
 }
 
+.project-description img.logo#facebook:hover {
+  opacity: 0.3;
+}
+
 .project-container {
   /* height: 100%;
   float: left;
   padding: 0; */
   position: relative;
-  background-color: #2d3e50;
+  background-color: #333333;
 }
 
 .project-container:hover img {
