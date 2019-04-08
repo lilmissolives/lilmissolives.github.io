@@ -461,6 +461,12 @@ div#project div.l-box {
   margin: auto; */
 }
 
+h2#project-section {
+  margin-top: 50px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
 #project-thumb {
   text-align: center;
 }
