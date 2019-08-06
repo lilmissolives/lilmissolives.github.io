@@ -456,6 +456,10 @@ div#project div.l-box {
   letter-spacing: 0.05em;
 }
 
+.project-subtitle {
+  font-size: 14px;
+}
+
 #project-grid {
   /* max-width: 1200px;
   margin: auto; */
