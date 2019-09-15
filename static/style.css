@@ -378,10 +378,8 @@ a.pure-button-primary {
 #header #logo a {
   text-decoration: none;
   color: #222;
-  /*text-transform: uppercase;*/
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
-  /*letter-spacing: 0.08em;*/
   font-size: 60px;
   transition: 0.3s ease;
   vertical-align: middle;
