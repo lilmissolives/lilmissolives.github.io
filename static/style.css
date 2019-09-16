@@ -380,11 +380,8 @@ a.pure-button-primary {
   color: #222;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
-  transition: 0.3s ease;
-}
-
-#header #logo span {
   font-size: 60px;
+  transition: 0.3s ease;
   vertical-align: middle;
 }
 
