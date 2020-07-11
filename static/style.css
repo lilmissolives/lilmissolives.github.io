@@ -12,11 +12,48 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
-    font-family: 'Raleway';
+    font-family: 'Stellar', 'Raleway';
+    background-color: white;
+}
+
+@font-face {
+  font-family: 'Stellar';
+  src: url('fonts/Stellar-Light.woff2') format('woff2'),
+      url('fonts/Stellar-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stellar';
+  src: url('fonts/Stellar-Medium.woff2') format('woff2'),
+      url('fonts/Stellar-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stellar';
+  src: url('fonts/Stellar-Regular.woff2') format('woff2'),
+      url('fonts/Stellar-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stellar';
+  src: url('fonts/Stellar-Bold.woff2') format('woff2'),
+      url('fonts/Stellar-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 .pure-g [class *= "pure-u"] {
-  font-family: 'Raleway';
+  font-family: 'Stellar', 'Raleway';
 }
 
 h1,
