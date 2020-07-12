@@ -729,6 +729,41 @@ div#project div.l-box {
   margin-left: 50px;
 }
 
+/* New portfolio grid */
+.project-shirts { 
+  grid-area: shirt;
+  background-color: #ffce9b;
+}
+.project-grocery {
+  grid-area: grocery;
+  background-color: #a7d2db;
+}
+.project-wooshmail {
+  grid-area: woosh;
+  background-color: #ffdbd4;
+}
+
+.project-grid-new {
+  display: grid;
+  grid-template-areas:
+    'shirt shirt shirt grocery grocery'
+    'shirt shirt shirt grocery grocery'
+    'woosh woosh woosh grocery grocery'
+    'woosh woosh woosh grocery grocery';
+  grid-gap: 10px;
+  margin: 50px;
+}
+
+.project-grid-new > div {
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.project-grid-new img {
+  width: 100%;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* disabled */
 /* @media (max-width: 72em) {
