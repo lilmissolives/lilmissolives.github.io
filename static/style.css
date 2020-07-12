@@ -8,6 +8,11 @@
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
  */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     line-height: 1.7em;
     color: #7f8c8d;
@@ -233,8 +238,11 @@ a.pure-button-primary {
 }
 
 .header-wrapper {
-  max-width: 1200px;
-  margin: auto;
+  /* max-width: 1200px;
+  margin: auto; */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 100px;
 }
 
 .content-wrapper#project {
@@ -498,10 +506,15 @@ div#project div.l-box {
   margin: auto; */
 }
 
-h2#project-section {
+h2.project-section {
   margin-top: 50px;
-  text-align: center;
-  letter-spacing: 0.1em;
+  margin-left: 50px;
+  font-weight: normal;
+  font-size: 1.8em;
+  color: #000;
+  padding-top: 20px;
+  /* text-align: center;
+  letter-spacing: 0.1em; */
 }
 
 #project-thumb {
@@ -657,6 +670,52 @@ h2#project-section {
   width: 100%;
 }
 
+.intro {
+  color: #000000;
+  margin: 0px 175px 0px 175px;
+}
+
+.intro #title {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.intro #subtitle {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+/* Static sidebar */
+.sidenav {
+  width: 120px;
+  position: fixed;
+  z-index: 1;
+  top: 200px;
+  left: 20px;
+  /* background: #eee; */
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav div {
+  margin-bottom: 10px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+
+.sidenav a.active {
+  /* font-size: 30px; */
+  text-decoration: underline;
+}
+
+.sidenav a:hover {
+  color: #aaa;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* disabled */
 /* @media (max-width: 72em) {
@@ -691,6 +750,10 @@ h2#project-section {
   .gallery-column#smaller {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .sidenav {
+    visibility: hidden;
   }
 }
 
