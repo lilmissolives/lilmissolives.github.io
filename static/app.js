@@ -11,9 +11,6 @@ window.onload = () => {
         if (item.length) { return item; }
       });
 
-  // Initialize the first link
-  $('.sidenav').find('a').first().addClass('active');
-
   // Bind to scroll
   $(window).scroll(function(){
     // Get container scroll position

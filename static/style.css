@@ -506,13 +506,16 @@ div#project div.l-box {
   margin: auto; */
 }
 
-h2.project-section {
-  margin-top: 50px;
+.project-section {
+  padding-top: 10px;
+}
+
+.project-section h2 {
+  /* margin-top: 50px; */
   margin-left: 50px;
   font-weight: normal;
   font-size: 1.8em;
   color: #000;
-  padding-top: 20px;
   /* text-align: center;
   letter-spacing: 0.1em; */
 }
@@ -672,17 +675,19 @@ h2.project-section {
 
 .intro {
   color: #000000;
-  margin: 0px 175px 0px 175px;
+  margin: 0px 175px 100px 175px;
 }
 
 .intro #title {
   font-size: 3em;
   margin-bottom: 30px;
+  line-height: 1.3em;
 }
 
 .intro #subtitle {
   font-size: 1.5em;
   margin-bottom: 30px;
+  line-height: 1.3em;
 }
 
 /* Static sidebar */
@@ -709,11 +714,19 @@ h2.project-section {
 
 .sidenav a.active {
   /* font-size: 30px; */
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  font-weight: bold;
 }
 
 .sidenav a:hover {
   color: #aaa;
+}
+
+.section-divider {
+  background-color: #c5dbda;
+  width: 80px;
+  height: 6px;
+  margin-left: 50px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
