@@ -768,6 +768,8 @@ div#project div.l-box {
   text-align: center;
   padding: 50px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .project-grid-new img {
