@@ -679,15 +679,16 @@ div#project div.l-box {
 }
 
 .intro #title {
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 30px;
   line-height: 1.3em;
 }
 
 .intro #subtitle {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 30px;
   line-height: 1.3em;
+  font-weight: lighter;
 }
 
 /* Static sidebar */
@@ -704,18 +705,14 @@ div#project div.l-box {
   margin-bottom: 10px;
   padding-left: 15px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .sidenav a {
   text-decoration: none;
   font-size: 18px;
   color: #000;
-}
-
-.sidenav a.active {
-  /* font-size: 30px; */
-  /* text-decoration: underline; */
-  /* font-weight: bold; */
+  transition: 0.3s ease;
 }
 
 .sidenav a:hover {
@@ -770,10 +767,40 @@ div#project div.l-box {
   border-radius: 10px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .project-grid-new img {
   width: 100%;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00000088;
+  border-radius: 10px;
+}
+
+.project-grid-new > div:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay .project-title {
+  color: white;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: lighter;
+  line-height: 1em;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -814,6 +841,14 @@ div#project div.l-box {
 
   .sidenav {
     visibility: hidden;
+  }
+
+  .project-grid-new {
+    grid-template-areas:
+      'shirt'
+      'grocery'
+      'woosh';
+    grid-gap: 20px;
   }
 }
 
