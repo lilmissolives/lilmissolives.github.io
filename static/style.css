@@ -242,13 +242,14 @@ a.pure-button-primary {
   margin: auto; */
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .content-wrapper#project {
+  /* top: 15%;
+  max-width: 1600px; */
   top: 15%;
-  /* allow the project showcase to be bigger */
-  max-width: 1600px;
+  max-width: unset;
 }
 
 /* We want to give the content area some more padding */
@@ -675,7 +676,7 @@ div#project div.l-box {
 
 .intro {
   color: #000000;
-  margin: 0px 50px 100px 50px;
+  margin: 100px 50px 100px 50px;
 }
 
 .intro #title {
@@ -802,6 +803,141 @@ div#project div.l-box {
   font-weight: lighter;
   line-height: 1em;
 }
+
+.portfolio-grid-new {
+  display: grid;
+  grid-template-areas:
+    'title title mockup mockup';
+  /* background-color: #ffce9b; */
+  background-image: linear-gradient(to bottom right, #FF835F, #FFA94A);
+  position: relative;
+  padding: 50px;
+}
+
+.portfolio-title {
+  grid-area: title;
+  padding-left: 20px;
+  font-size: 50px;
+  color: white;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+}
+.portfolio-mockup {
+  grid-area: mockup;
+  text-align: center;
+}
+
+.portfolio-section {
+  padding: 80px 150px;
+  color: black;
+}
+
+.portfolio-section:nth-of-type(2n) {
+  background-color: #c5dbda4d;
+}
+
+.portfolio-section h1 {
+  font-weight: normal;
+  font-size: 36px;
+  color: black;
+}
+
+.portfolio-section h2 {
+  font-weight: normal;
+  font-size: 24px;
+  color: black;
+  margin-top: 50px;
+}
+
+.portfolio-section h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  margin-top: 50px;
+}
+
+.portfolio-section .portfolio-description {
+  font-size: 18px;
+}
+
+.portfolio-description .color-grid {
+  display: grid;
+  grid-template-areas:
+    'c1 c2 c3 c4 c5 c6'
+    't1 t2 t3 t4 t5 t6';
+  position: relative;
+  grid-gap: 30px;
+  /* padding: 50px 0px; */
+}
+
+.color-grid .color-grid-item {
+  width: 150px;
+  height: 75px;
+}
+
+.color-grid .color-code {
+  color: #888888;
+}
+
+div.color1 {
+  grid-area: c1;
+}
+
+div.color2 {
+  grid-area: c2;
+}
+
+div.color3 {
+  grid-area: c3;
+}
+
+div.color4 {
+  grid-area: c4;
+}
+
+div.color5 {
+  grid-area: c5;
+}
+
+div.color6 {
+  grid-area: c6;
+}
+
+div.text1 {
+  grid-area: t1;
+}
+
+div.text2 {
+  grid-area: t2;
+}
+
+div.text3 {
+  grid-area: t3;
+}
+
+div.text4 {
+  grid-area: t4;
+}
+
+div.text5 {
+  grid-area: t5;
+}
+
+div.text6 {
+  grid-area: t6;
+}
+
+
+
+/* Clear floats after the columns */
+.portfolio-table {
+  display: grid;
+  grid-template-columns: 66% 33%;
+  position: relative;
+  grid-gap: 30px;
+}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* disabled */
