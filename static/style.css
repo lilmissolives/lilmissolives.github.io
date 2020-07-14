@@ -979,12 +979,46 @@ div.text6 {
     visibility: hidden;
   }
 
+  .portfolio-grid-new {
+    grid-template-areas:
+      'mockup'
+      'title';
+  }
+
+  .portfolio-mockup img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
   .project-grid-new {
     grid-template-areas:
       'shirt'
       'grocery'
       'woosh';
     grid-gap: 20px;
+  }
+
+  .portfolio-description .color-grid {
+    grid-template-areas:
+      'c1'
+      't1'
+      'c2'
+      't2'
+      'c3'
+      't3'
+      'c4'
+      't4'
+      'c5'
+      't5'
+      'c6'
+      't6';
+    /* position: relative;
+    grid-gap: 30px; */
+  }
+
+  .color-grid .color-grid-item {
+    width: 300px;
+    height: 150px;
   }
 }
 
