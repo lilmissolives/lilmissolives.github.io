@@ -821,6 +821,10 @@ div#project div.l-box {
   background-image: linear-gradient(to bottom right, #218db8, #a9fcf1);
 }
 
+.portfolio-grid-new#email {
+  background-image: linear-gradient(to bottom right, #e9a5a5, #ffdbd4);
+}
+
 .portfolio-title {
   grid-area: title;
   padding-left: 20px;
@@ -944,6 +948,12 @@ div.text5 {
 
 div.text6 {
   grid-area: t6;
+}
+
+.copyright {
+  color: #ccc;
+  font-size: 16px;
+  font-family: 'Raleway';
 }
 
 
