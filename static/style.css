@@ -753,13 +753,27 @@ div#project div.l-box {
 
 .project-grid-new {
   display: grid;
+  grid-gap: 10px;
+  margin: 50px;
+}
+
+.project-grid-new#ux {
   grid-template-areas:
     'shirt shirt shirt grocery grocery'
     'shirt shirt shirt grocery grocery'
     'woosh woosh woosh grocery grocery'
     'woosh woosh woosh grocery grocery';
-  grid-gap: 10px;
-  margin: 50px;
+}
+
+.project-grid-new#basic {
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 500px;
+}
+
+.project-item {
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
 }
 
 .project-grid-new > div {
