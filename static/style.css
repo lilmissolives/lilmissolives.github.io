@@ -839,6 +839,10 @@ div#project div.l-box {
   text-align: center;
 }
 
+.portfolio-mockup img {
+  height: 550px;
+}
+
 .portfolio-section {
   padding: 40px 150px;
   color: black;
