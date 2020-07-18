@@ -305,9 +305,10 @@ a.pure-button-primary {
     .home-menu {
         text-align: left;
     }
-        .home-menu ul {
-            float: right;
-        }
+
+    .home-menu ul {
+        float: right;
+    }
 
     /* We increase the height of the splash-container */
 /*    .splash-container {
@@ -878,6 +879,7 @@ div#project div.l-box {
   font-size: 48px;
   color: black;
   text-transform: uppercase;
+  line-height: 1em;
 }
 
 .portfolio-section h2 {
@@ -887,6 +889,7 @@ div#project div.l-box {
   color: black;
   margin-top: 50px;
   text-transform: uppercase;
+  line-height: 1em;
 }
 
 .portfolio-section h3 {
@@ -895,6 +898,7 @@ div#project div.l-box {
   font-size: 20px;
   color: black;
   margin-top: 50px;
+  line-height: 1em;
 }
 
 .portfolio-section .portfolio-description {
@@ -1038,6 +1042,7 @@ div.text6 {
   .portfolio-mockup img {
     width: 100%;
     margin-bottom: 50px;
+    height: auto;
   }
 
   .project-grid-new {
@@ -1046,6 +1051,10 @@ div.text6 {
       'grocery'
       'woosh';
     grid-gap: 20px;
+  }
+
+  .portfolio-section {
+    padding: 40px;
   }
 
   .portfolio-description .color-grid {
@@ -1069,6 +1078,10 @@ div.text6 {
   .color-grid .color-grid-item {
     width: 300px;
     height: 150px;
+  }
+
+  .header-wrapper {
+    margin-top: 20px;
   }
 }
 
