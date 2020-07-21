@@ -1017,7 +1017,7 @@ div.text6 {
 .mobile-grid#woosh video {
   width: 130%;
   position: relative;
-  left: -100px;
+  left: -50px;
   z-index: -1;
 }
 
@@ -1117,6 +1117,13 @@ div.text6 {
 
   .mobile-grid {
     grid-template-columns: 100%;
+  }
+
+  .mobile-grid#woosh {
+    grid-template-columns: 100%;
+  }
+
+  .mobile-grid .mobile-description {
     padding-top: 50px;
   }
 
