@@ -997,17 +997,34 @@ div.text6 {
   grid-template-columns: 50% 50%;
 }
 
+.mobile-grid#woosh {
+  grid-template-columns: 30% 70%;
+}
+
 .mobile-grid .mobile-description {
   margin: auto 0 auto 0;
 }
 
 .mobile-grid .mobile-video {
   text-align: right;
+  overflow: hidden;
+}
+
+.mobile-grid .mobile-video video {
+  width: 100%;
+}
+
+.mobile-grid#woosh video {
+  width: 130%;
+  position: relative;
+  left: -100px;
+  z-index: -1;
 }
 
 .mobile-grid .mobile-title {
   font-size: 36px;
   margin-bottom: 50px;
+  line-height: 1em;
 }
 
 
@@ -1096,6 +1113,11 @@ div.text6 {
   .color-grid .color-grid-item {
     width: 300px;
     height: 150px;
+  }
+
+  .mobile-grid {
+    grid-template-columns: 100%;
+    padding-top: 50px;
   }
 
   .header-wrapper {
