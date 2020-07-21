@@ -1027,6 +1027,10 @@ div.text6 {
   line-height: 1em;
 }
 
+.portfolio-slideshow {
+  padding: 100px;
+}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* disabled */
