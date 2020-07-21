@@ -992,6 +992,24 @@ div.text6 {
   grid-gap: 30px;
 }
 
+.mobile-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.mobile-grid .mobile-description {
+  margin: auto 0 auto 0;
+}
+
+.mobile-grid .mobile-video {
+  text-align: right;
+}
+
+.mobile-grid .mobile-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* disabled */
