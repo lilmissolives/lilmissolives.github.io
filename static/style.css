@@ -510,7 +510,7 @@ div#project div.l-box {
 }
 
 .project-section {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .project-section h2 {
@@ -1095,6 +1095,11 @@ div.text6 {
 
 .footer-social a:hover {
   color: #222;
+}
+
+span#happy-face {
+  font-family: 'Work Sans';
+  font-weight: lighter;
 }
 
 
