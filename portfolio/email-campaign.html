@@ -62,7 +62,11 @@
       <div class="portfolio-description">
         <div class="portfolio-table">
           <div class="portfolio-column-1">
-            <p>This is the third project of a series of UX projects from the Treehouse UX program.</p>
+            <p>
+              This is the third project of a series of UX projects from the Treehouse UX program.
+              In this project, I designed a website called Wooshmail that allows users to create email marketing campaigns, browse through available email templates, and analyze the performance of their campaigns.
+              I needed to design it in a way that was user-friendly and intuitive enough for beginners, but powerful enough for advanced users.
+            </p>
           </div>
           <div class="portfolio-column-2">
             <p><b>Role</b>: Research, strategy, design</p>
@@ -79,29 +83,31 @@
       <h1>Introduction</h1>
       <div class="portfolio-description">
         <p>Wooshmail is a mock email marketing campaign website that needed two user flows, “Admin” and “Basic” roles.
-          They are looking to create and improve the experience for both flows as their audience consists of mostly small business owners and entrepreneurs. 
+          The Admin role is for business owners and advanced users who manage the entire email marketing for their business, and make the final calls.
+          Basic users have a more restricted set of features available to them, and need their work to be reviewed by Admin users.
+          They are looking to create and improve the experience for both flows, as their audience consists of mostly small business owners and entrepreneurs. 
         </p>
 
-        <h2>Problem</h2>
-        <p>Most small business owners want to be able to keep in contact with their customer base, and want an easy and intuitive way to do that.
-          The common issue is that the process can be clunky and confusing -- as many tend to be older and are not very tech-savvy.
-          The issue becomes more compounded as they try to use editing tools, understand new marketing phrases, or even try to navigate. 
+        <h2>The Problem</h2>
+        <p>Most small business owners want an easy way to keep in contact with their customer base.
+          The common issue is that the process can be clunky and confusing, as many tend to be older and are not very tech-savvy.
+          The issue becomes more compounded as they try to use complicated editing tools, understand niche marketing phrases, or even try to navigate these sites. 
         </p>
-        <p>The other issue is also that there’s various competitor sites such as Mailchimp, Mailerlite, and Constant Contact -- all of which have similar features.
-          This makes it difficult for prospective users to decide as they all seem to be the same. 
+        <p>One other issue is also that there are various existing competitor sites such as Mailchimp, Mailerlite, and Constant Contact -s all of which have a similar set of features.
+          This makes it difficult for prospective users to decide which service to use, since they all seem to be the same. 
         </p>
-        <p>How can we make a mailing campaign site straightforward enough for any small business owner to use? </p>
+        <p>I sought to answer the question: <i>How can we make a email campaign site straightforward enough for any small business owner to use?</i></p>
       </div>
     </div>
 
     <div class="portfolio-section">
       <h1>Research</h1>
       <div class="portfolio-description">
-        <p>These are the steps I took into understanding not only the issue, but the product itself</p>
+        <p>At first, I looked into understanding not only the issues that small business owners face, but also what the product itself is. I started by:</p>
         <ol>
-          <li>Understand what was the difference between email campaigns and regular emailing, as I’ve never used an email campaign site before.</li>
-          <li>Research the competitors and compare each of their features.</li>
-          <li>Create user personas and storyboards to further understand what the pain points were and how to go upon resolving them.</li>
+          <li>Reading up on what the difference is between email campaigns and regular emailing, as I’ve never used an email campaign site before.</li>
+          <li>Researching the competitors and comparing each of their features.</li>
+          <li>Creating user personas and storyboards to further understand what the pain points were for each role and how to address them.</li>
         </ol>
 
         <h2>User Personas</h2>
@@ -118,14 +124,14 @@
     <div class="portfolio-section">
       <h1>Sketches</h1>
       <div class="portfolio-description">
-        <p>Approaching the iteration, I wanted to keep things mostly consistent with each page,
-          aside from the template and template editing page, so that there is some consistency and theme with the website.
+        <p>Approaching the iteration, I wanted to keep each page consistent with each other,
+          aside from the template editing page, so that there is unifying theme.
           I ended up sketching out two ideas per page, and as I was sketching I kept in mind that this app should be intuitive for users within that age range.
         </p>
 
         <p>I tried to find as many examples from competitors like Mailchimp, Constantcontact, and Mailerlite as I could,
-          but this was a challenge because I’ve never used those apps, let alone have an account to see how it works.
-          I also made the add recipients and send mail pages similar to a regular email client,
+          but this was a challenge because I’ve never used those apps, let alone have an account to see how it works for myself.
+          I also designed the add recipients and send mail pages similar to a regular email client,
           so that it would feel more familiar for those who have not used an email marketing client before. 
         </p>
 
@@ -160,12 +166,12 @@
       <h1>Wireframes</h1>
       <div class="portfolio-description">
         <p>As I usually do when I transition from sketching to wireframing, I combined the best ideas from both sketches into the wireframes.
-          Admittedly, due to my inexperience with these types of mail clients, I ran into what I perceived as an error on my end with interpreting how to go upon the add recipients pages.
+          Admittedly, due to my inexperience with these types of mail clients, I ran into a potential flaw in my design for the add recipients pages because I misunderstood the requirements.
           I ended up redesigning part of it by changing the preview mail section into an add recipient groups section so that I didn’t need to entirely redo the design, which I think worked out well. 
         </p>
 
-        <p>I also added details above the email template image in the send email page to serve as a confirmation page and help users make sure that all of their entered info looks correct.
-          For the exceeds expectations pages, I made both admin and basic pages similar to keep a level of consistency despite the difference in available features. 
+        <p>I added details above the email template image in the send email page to serve as a confirmation page and help users make sure that all of their entered info looks correct before sending.
+          I also made both Admin and Basic pages similar, to keep a level of consistency in the site despite the difference in available features between each role. 
         </p>
 
         <div class="portfolio-slideshow">
@@ -188,49 +194,48 @@
     <div class="portfolio-section">
       <h1>User Tests</h1>
       <div class="portfolio-description">
-        <p>I conducted user tests after selecting ten users, they tested out the wireframes version of the prototype.
-          The group was split to two testing out either admin or basic user flows.
+        <p>I conducted user tests after selecting 10 users, and asked them to test out the wireframe version of the prototype.
+          The group was split into two testing groups, one testing the Admin and the others testing the Basic user flows.
         </p>
 
-        <h2>Analysis</h2>
-        <h3>Admin</h3>
-        <h4>What went well?</h4>
+        <h2>Admin</h2>
+        <h3>The Good</h3>
         <ul>
-          <li>Template editor seems intuitive, and similar to existing tools like Photoshop which makes it easy for power users</li>
-          <li>Add recipient page is similar to email clients that most people use, which makes it familiar</li>
-          <li>Navigating through the site was easy due to clear instructions and next steps throughout the site, despite users not having experience with email marketing sites</li>
-          <li>Users appreciated having the review page to preview the email before sending</li>
-          <li>Analytics page presents lots of data in an easy-to-understand and digestible way</li>
-          <li>Menus and navigation bars are helpful and consistent</li>
+          <li>Template editor seems intuitive, and similar to existing tools like Photoshop which makes it easy for power users to navigate.</li>
+          <li>Add recipient page is similar to email clients that most people use, which makes it familiar and less of a learning curve to use.</li>
+          <li>Navigating through the site was easy due to clear instructions along the way, despite users not having experience with email marketing sites.</li>
+          <li>Users appreciated having the review page to preview the email before sending.</li>
+          <li>Analytics page presents lots of data in an easy-to-understand and digestible way.</li>
+          <li>Menus and navigation bars are helpful and consistent.</li>
         </ul>
 
-        <h4>What needs to change?</h4>
+        <h3>Areas to improve</h3>
         <ul>
-          <li>The layout of the template editor could be adjusted so that more focus is on the actual template being edited</li>
-          <li>The add recipient page could be more consistent, for example the “edit” texts and buttons</li>
-          <li>Navigation buttons overall are misleading at times or take users to pages they don’t expect, for example clicking on the back button from the review page</li>
-          <li>Review page could have a more visually appealing way to display the email information</li>
+          <li>The layout of the template editor could be made larger so that more focus is on the actual template being edited.</li>
+          <li>The elements on the add recipient page could be more consistent, for example the “edit” texts and buttons.</li>
+          <li>Navigation buttons overall are misleading at times, or take users to pages they don’t expect. For example clicking on the back button from the review page didn't really take the user back.</li>
+          <li>Review page could have a more visually appealing way to display the email information.</li>
           <li>Analytics page could use a call-to-action or next steps, like downloading/sharing the report, modifying the campaign, etc.</li>
-          <li>Some menu items are unclear, not needed, or missing across pages</li>
+          <li>Some menu items are unclear, not needed, or missing across pages.</li>
         </ul>
 
-        <h3>Basic</h3>
-        <h4>What went well?</h4>
+        <h2>Basic</h2>
+        <h3>The Good</h3>
         <ul>
-          <li>Feedback checkmarks make sense and are appreciated</li>
-          <li>Site has a lot of functionality even for basic access, so would be good for both beginners and experienced users</li>
-          <li>Template editor seems easy to use, yet powerful enough so that users can have power to customize</li>
-          <li>Icons are used well, and describe the tools in an intuitive way</li>
-          <li>Add recipient page feels similar to standard email clients and makes sense</li>
+          <li>Feedback checkmarks make sense and are appreciated.</li>
+          <li>Site has a lot of functionality even for basic access, so would be good for both beginners and experienced users.</li>
+          <li>Template editor seems easy to use, yet powerful enough so that users can have power to customize.</li>
+          <li>Icons are used well, and describe the tools in an intuitive way.</li>
+          <li>Add recipient page feels similar to standard email clients.</li>
         </ul>
 
-        <h4>What needs to change?</h4>
+        <h3>Areas to improve</h3>
         <ul>
-          <li>Feedback section on the review page could be clarified - users were unsure whether this was automated feedback, or a live person giving it</li>
-          <li>Analytics page could be more clear and describe the metrics that are shown. Additionally, there should ideally be actions to take based on the data</li>
-          <li>Sizing of various texts, sidebars, and elements throughout the site can be more consistent and made more readable</li>
-          <li>Transition between the template editor and add recipient page could be improved, feels like it skipped a couple steps</li>
-          <li>At the review page, the back button is confusing because it leaves the user on the same page</li>
+          <li>Feedback section on the review page could be clarified - users were unsure whether this was automated feedback, or a live person entering it.</li>
+          <li>Analytics page could be more clear and describe the metrics that are shown. Additionally, there should ideally be actions to take based on the data.</li>
+          <li>Sizing of various texts, sidebars, and elements throughout the site can be more consistent and made more readable.</li>
+          <li>Transition between the template editor and add recipient page could be improved - feels like it skipped a couple steps.</li>
+          <li>At the review page, the back button is confusing because it leaves the user on the same page.</li>
         </ul>
       </div>      
     </div>
@@ -239,21 +244,21 @@
       <h1>Design Principles</h1>
       <div class="portfolio-description">
         <h2>Colors</h2>
-        <p>I went with a balance between mostly primary colors -- red, blue, and yellow, with a hint of green within turquoise and creamy mint green.
-          I used the cool colors more to keep things professional but use the other colors as more accents to the overall pages.
+        <p>I went with a balance between mostly primary colors - red, blue, and yellow, with a hint of green within turquoise and creamy mint green.
+          I featured the cool colors more to keep a sense of professionalism and used the other colors as accents.
           Red was used to create a sense of urgency when used in features such as the “new campaign” and “go back to campaigns” buttons, and in the graphs in the analytics page. 
         </p>
-        <p>The template editor page is a dark cool theme to create contrast by comparison to the other pages,
-          but also to make it easier on the eyes for users when they are editing their templates. 
+        <p>The template editor page is a dark cool theme to create contrast in comparison to the other pages,
+          but also to make it easier on the eyes when users are editing their templates. 
         </p>
 
         <img src="../img/portfolio/treehouse/woosh-design-guide.png" />
 
-
         <h3>Shapes</h3>
-        <ul>
-          <li>Rounded edges -- conveys friendliness to the users, and as part of the branding of being easy and straightforward.</li>
-          <li>Icons in campaign pages -- I hand made the icons, to communicate fully what each function was without reading.</li>
+        <p>
+          I chose to go with rounded edges for elements on the page, such as buttons, dialogs, and images.
+          I felt that this conveys softness and friendliness to the users, and reflecting how easy and straightforward it should be to use the site.
+          I also handmade the icons in the campaign and template editor pages to communicate what each tool does without the user needing to read the text.
         </ul>
       </div>
     </div>
@@ -265,7 +270,7 @@
           <div class="mobile-description">
             <div class="mobile-title">Template gallery</div>
             <p>
-              Create a new campaign with a selection of pre-made templates free to edit to exactly the way you want.
+              Create a new campaign from a selection of pre-made templates, free to edit and customize to exactly the way you want.
             </p>
           </div>
           <div class="mobile-video">
@@ -277,7 +282,7 @@
             <div class="mobile-title">Template editor</div>
             <p>
               Picked out a template and want to make it yours?
-              Go ahead and change it up with our easy to use editor where you can drag and drop, edit text, and customize it for your campaign.
+              Use the template editor to drag and drop content, edit text, and customize it for your campaign.
             </p>
           </div>
           <div class="mobile-video">
@@ -288,8 +293,8 @@
           <div class="mobile-description">
             <div class="mobile-title">Review and send email</div>
             <p>
-              Make sure your audience gets your message with recipient lists and scheduled sending!
-              Review page makes sure that you’re spreading the right campaign with preview, and the sent page confirms that your message was sent.
+              Ensure your audience gets your message with recipient lists and scheduled sending.
+              The review page helps you double-check that your email looks as you expect, and the sent page confirms that your message was sent.
             </p>
           </div>
           <div class="mobile-video">
@@ -300,7 +305,7 @@
           <div class="mobile-description">
             <div class="mobile-title">Campaign analysis</div>
             <p>
-              Take a look at your campaign stats all in one page, you can even share or print it out. 
+              Take a look at your campaign stats all in one page. Share the data with your team, print it out for later viewing, or edit your campaign to optimize your results. 
             </p>
           </div>
           <div class="mobile-video">
@@ -323,7 +328,7 @@
             <div class="mobile-title">Feedback before sending</div>
             <p>
               As a basic user, it’s always good to get a second opinion before sending.
-              Collaborators can take a look at your draft and make sure you don’t miss a typo with the feedback feature. 
+              Admins and collaborators can take a look at your email draft and directly share feedback with you. 
             </p>
           </div>
           <div class="mobile-video">
@@ -339,21 +344,22 @@
       <h1>Summary</h1>
       <div class="portfolio-description">
         <p>
-          Admittedly, this project was difficult for me to understand in the beginning, as I have never used a B2B email marketing website.
-          However, I was able to take advantage of it by looking at the problem from the perspective of users trying to use a site like this for the first time.
+          Admittedly, this project was difficult for me to understand in the beginning, as I had never used a B2B email marketing website before.
+          However, I was able to take advantage of this by looking at the problem from the perspective of users trying to use a site like this for the first time.
           I used this to try to confirm my understanding of the problem and design user flows that would work well for both new and experienced users.
-          As a result of this project, I feel like I am more understanding of how to design for a B2B client and how campaign sites like these work, and how to design for two different types of users for the same site.
+          As a result, I feel like I have a better understanding of how to design for a B2B client, how campaign sites like these work, and how to design for two different types of users for the same site.
         </p>
         <h2>Future Improvements</h2>
         <p>
-          Next time, I would definitely try to do better research on email marketing websites,
-          even go as far as making accounts on these sites to get a better understanding of how they work so that I could gain more confidence and confirmation in my designs.
-          I would also make the differences between admin and basic sites more apparent, as both sites look similar if not almost the same.
+          Next time, I would definitely try to do better research on email marketing websites.
+          I would even go as far as creating accounts on these sites and try them myself to get a better understanding of how they work.
+          This would let me gain more confidence and confirmation in my designs.
+          I would also make the differences between Admin and Basic sites more apparent, as both sites look very similar currently.
         </p>
         <p>
           Regarding user testing, I would create more specific and targeted questions to ask my users as they test, so that I know where exactly to revisit or make changes to.
           With the mockup designs, I would take the time to try various color palettes to see what looks and fits best with the site, since I feel that there is quite a bit of white space on the template gallery page.
-          And finally, if I had more time, I would create mockups for more pages to make the site look more cohesive. 
+          And finally, if I had more time, I would create mockups for more pages to make the site look more cohesive and complete. 
         </p>
       </div>
     </div>
