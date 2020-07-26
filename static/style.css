@@ -636,10 +636,11 @@ div#project div.l-box {
 
 #portrait {
   text-align: center;
+  padding: 0;
 }
 
 #portrait img {
-  width: 500px;
+  width: 100%;
 }
 
 @media screen and (min-width: 64em) {
@@ -649,6 +650,7 @@ div#project div.l-box {
   }
 
   #portrait img {
+    width: 500px;
     position: absolute;
     margin: auto;
     display: block;
