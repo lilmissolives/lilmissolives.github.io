@@ -714,6 +714,15 @@ span#name-outline {
   border-bottom: 15px solid #c5dbda;
   line-height: 20px;
   display: inline-block;
+  transition: all 2s ease-out;
+  width: 0px;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
 
 /* Static sidebar */

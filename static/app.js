@@ -32,4 +32,51 @@ window.onload = () => {
         lastId = id;
     }                   
   });
+
+  var textIndex = 0;
+  const texts = [{
+    text: "Hi, you've reached ",
+    index: 0,
+    id: 'title-first',
+  }, {
+    text: "Olivia.",
+    index: 0,
+    id: 'name-outline',
+  }];
+
+  const getTypeDelay = () => {
+    return Math.floor(Math.random() * 100) + 50;
+  }
+
+  const typeText = () => {
+    if (textIndex >= texts.length) {
+      setTimeout(animateOutline, 500);
+      return;
+    }
+
+    var textObj = texts[textIndex];
+    if (textObj.index < textObj.text.length) {
+      document.getElementById(textObj.id).innerHTML += textObj.text.charAt(textObj.index);
+      textObj.index += 1;
+    } else {
+      textIndex += 1;
+    }
+    setTimeout(typeText, getTypeDelay());
+  }
+
+  const animateOutline = () => {
+    var elem = document.getElementById('name-outline');
+    elem.style.width = '170px';
+    const redrawLine = () => {
+      elem.classList.add('notransition');
+      elem.style.width = '0px';
+      elem.offsetHeight;
+      elem.classList.remove('notransition');
+      elem.style.width = '170px';
+    };
+    // elem.onmouseover = redrawLine;
+    elem.onclick = redrawLine;
+  }
+
+  typeText();
 }
