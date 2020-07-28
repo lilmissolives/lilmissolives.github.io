@@ -860,7 +860,8 @@ span#name-outline {
 }
 
 .portfolio-grid-new#email {
-  background-image: linear-gradient(to bottom right, #e9a5a5, #ffdbd4);
+  /* background-image: linear-gradient(to bottom right, #e9a5a5, #ffdbd4); */
+  background-image: linear-gradient(to bottom right, #1a535c, #4ecdc4);
 }
 
 .portfolio-title {
@@ -1102,6 +1103,14 @@ div.text6 {
 span#happy-face {
   font-family: 'Work Sans';
   font-weight: lighter;
+}
+
+#project-illustration img {
+  width: 100%;
+}
+
+#project-illustration .project-description {
+  padding-top: 100px;
 }
 
 
