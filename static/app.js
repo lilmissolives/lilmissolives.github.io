@@ -32,7 +32,9 @@ window.onload = () => {
         lastId = id;
     }                   
   });
+};
 
+$(document).ready(function() {
   var textIndex = 0;
   const texts = [{
     text: "Hi, you've reached ",
@@ -79,4 +81,4 @@ window.onload = () => {
   }
 
   typeText();
-}
+});
