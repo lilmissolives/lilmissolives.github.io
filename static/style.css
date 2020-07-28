@@ -718,6 +718,10 @@ span#name-outline {
   width: 0px;
 }
 
+.name-link {
+  cursor: pointer;
+}
+
 .notransition {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -1175,12 +1179,17 @@ span#happy-face {
     height: auto;
   }
 
-  .project-grid-new {
+  .project-grid-new#basic {
+    grid-template-columns: 100%;
+    grid-auto-rows: 500px;
+    grid-gap: 20px;
+  }
+
+  .project-grid-new#ux {
     grid-template-areas:
       'shirt'
       'grocery'
       'woosh';
-    grid-gap: 20px;
   }
 
   .portfolio-section {
