@@ -1126,6 +1126,31 @@ span#happy-face {
   padding-top: 100px;
 }
 
+.back-to-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.hidden-thing {
+  opacity: 0;
+}
+
+.back-to-portfolio {
+  text-align: center;
+}
+
+.back-to-portfolio a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+.back-to-portfolio a:hover {
+  color: #222;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* disabled */
@@ -1233,6 +1258,10 @@ span#happy-face {
 
   .header-wrapper {
     margin-top: 20px;
+  }
+
+  .back-to-top {
+    visibility: hidden;
   }
 }
 

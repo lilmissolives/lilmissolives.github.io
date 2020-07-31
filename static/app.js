@@ -32,6 +32,19 @@ window.onload = () => {
         lastId = id;
     }                   
   });
+
+  $(window).scroll(function() { // when the page is scrolled run this
+    const elems = document.getElementsByClassName('back-to-top');
+    if (elems.length === 0) {
+      return;
+    } 
+    const elem = elems[0];
+    if ($(this).scrollTop() != 0) { // if you're NOT at the top
+      elem.classList.remove('hidden-thing'); // .fadeIn("fast"); // fade in
+    } else { // else
+      elem.classList.add('hidden-thing'); // fade out
+    }
+  });
 };
 
 $(document).ready(function() {
