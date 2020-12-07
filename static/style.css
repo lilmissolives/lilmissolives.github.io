@@ -252,6 +252,10 @@ a.pure-button-primary {
   max-width: unset;
 }
 
+.content-wrapper#project {
+  font-size: 18px;
+}
+
 /* We want to give the content area some more padding */
 .content {
     padding: 1em;
@@ -788,18 +792,54 @@ span#name-outline {
   background-color: #ffdbd4;
 }
 
+.project-grid-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  grid-gap: 50px;
+  grid-template-rows: 400px;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-grid-card:hover {
+  transform: scale(1.015);
+}
+
+.project-grid-card-img {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.project-grid-label {
+  font-weight: lighter;
+  text-align: left;
+  color: #420;
+}
+
+.project-grid-label-title {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.project-grid-label-subtitle {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+
 .project-grid-new {
   display: grid;
   grid-gap: 10px;
   margin: 50px;
 }
 
+.project-grid-new a {
+  text-decoration: none;
+}
+
 .project-grid-new#ux {
-  grid-template-areas:
-    'shirt shirt shirt grocery grocery'
-    'shirt shirt shirt grocery grocery'
-    'woosh woosh woosh grocery grocery'
-    'woosh woosh woosh grocery grocery';
+  grid-gap: 50px;
 }
 
 .project-grid-new#basic {
@@ -813,17 +853,26 @@ span#name-outline {
   background-position: center center;
 }
 
-.project-grid-new > div {
+.project-grid-new .project-grid-card {
   text-align: center;
   padding: 50px;
   border-radius: 10px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   position: relative;
+
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .project-grid-new img {
   width: 100%;
+  overflow: hidden;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .project-overlay {
@@ -874,7 +923,7 @@ span#name-outline {
 
 .portfolio-grid-new#email {
   /* background-image: linear-gradient(to bottom right, #e9a5a5, #ffdbd4); */
-  background-image: linear-gradient(to bottom right, #1a535c, #4ecdc4);
+  background-image: linear-gradient(to bottom right, #298391, #7ed4d0);
 }
 
 .portfolio-title {
@@ -896,7 +945,7 @@ span#name-outline {
 }
 
 .portfolio-section {
-  padding: 40px 150px;
+  padding: 40px 250px;
   color: black;
   font-family: 'Open Sans';
   font-weight: lighter;
@@ -938,9 +987,9 @@ span#name-outline {
   line-height: 1em;
 }
 
-.portfolio-section .portfolio-description {
+/* .portfolio-section .portfolio-description {
   font-size: 16px;
-}
+} */
 
 .portfolio-description img {
   width: 100%;
@@ -1153,6 +1202,27 @@ span#happy-face {
   color: #222;
 }
 
+.btn-jump-to-final {
+  background-color: white;
+  color: #a5c7c6;
+  border: 2px solid #a5c7c6; /* Green */
+  /* border: none; */
+  /* color: white; */
+  padding: 10px 32px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 100px;
+  transition-duration: 0.2s;
+}
+
+.btn-jump-to-final:hover {
+  background-color: #a5c7c6; /* Green */
+  color: white;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* disabled */
 /* @media (max-width: 72em) {
@@ -1216,6 +1286,28 @@ span#happy-face {
       'shirt'
       'grocery'
       'woosh';
+  }
+
+  .project-grid-card {
+    /* display: grid; */
+    grid-template-columns: 30% 70%;
+    /* position: relative; */
+    /* grid-gap: 50px; */
+    grid-template-rows: 200px;
+    /* transition: all 0.2s ease-in-out; */
+    padding: 10px;
+  }
+
+  .project-grid-label {
+    padding-right: 10px;
+  }
+
+  .project-grid-label-title {
+    font-size: 32px;
+  }
+
+  .project-grid-label-subtitle {
+    font-size: 16px;
   }
 
   .portfolio-section {

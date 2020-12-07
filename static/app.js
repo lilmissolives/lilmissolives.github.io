@@ -48,6 +48,12 @@ window.onload = () => {
 };
 
 $(document).ready(function() {
+  $('.btn-jump-to-final').click(() => {
+    document.querySelector('#final-mockups').scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+
   var textIndex = 0;
   const texts = [{
     text: "Hi, you've reached ",
