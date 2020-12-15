@@ -718,7 +718,7 @@ span#name-outline {
   border-bottom: 15px solid #c5dbda;
   line-height: 20px;
   display: inline-block;
-  transition: all 2s ease-out;
+  transition: width 2s ease-out;
   width: 0px;
 }
 
@@ -1243,7 +1243,7 @@ span#happy-face {
 } */
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 60em) {
+@media (max-width: 64em) {
   .gallery-column {
     flex: 100%;
     max-width: 100%;
@@ -1257,10 +1257,6 @@ span#happy-face {
   .gallery-column#smaller {
     flex: 100%;
     max-width: 100%;
-  }
-
-  .sidenav {
-    visibility: hidden;
   }
 
   .portfolio-grid-new {
@@ -1286,16 +1282,18 @@ span#happy-face {
       'shirt'
       'grocery'
       'woosh';
+    margin: 20px;
+    grid-gap: 20px;
   }
 
   .project-grid-card {
     /* display: grid; */
     grid-template-columns: 30% 70%;
     /* position: relative; */
-    /* grid-gap: 50px; */
+    grid-gap: 20px;
     grid-template-rows: 200px;
     /* transition: all 0.2s ease-in-out; */
-    padding: 10px;
+    padding: 20px !important;
   }
 
   .project-grid-label {
@@ -1350,7 +1348,7 @@ span#happy-face {
   }
 
   .header-wrapper {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .back-to-top {
@@ -1358,7 +1356,13 @@ span#happy-face {
   }
 }
 
-@media (min-width: 60em) {
+@media (max-width: 85em) {
+  .sidenav {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 85em) {
   a.active .sidenav-mark {
     visibility: visible;
   } 
