@@ -791,6 +791,10 @@ span#name-outline {
   grid-area: woosh;
   background-color: #ffdbd4;
 }
+.project-niantic {
+  grid-area: grocery;
+  background-color: #ffb74a;
+}
 
 .project-grid-card {
   display: grid;
@@ -895,7 +899,7 @@ span#name-outline {
 
 .project-overlay .project-title {
   color: white;
-  font-size: 36px;
+  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -924,6 +928,10 @@ span#name-outline {
 .portfolio-grid-new#email {
   /* background-image: linear-gradient(to bottom right, #e9a5a5, #ffdbd4); */
   background-image: linear-gradient(to bottom right, #298391, #7ed4d0);
+}
+
+.portfolio-grid-new#niantic {
+  background-image: linear-gradient(to bottom right, #82dfe6, #0be2ac);
 }
 
 .portfolio-title {
