@@ -898,14 +898,24 @@ span#name-outline {
 }
 
 .project-overlay .project-title {
-  color: white;
   font-size: 30px;
+  color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   font-weight: lighter;
   line-height: 1em;
+}
+
+.project-overlay .project-title hr {
+  width: 5%;
+}
+
+.project-overlay .project-subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .portfolio-grid-new {
@@ -914,24 +924,30 @@ span#name-outline {
     'title title mockup mockup';
   /* background-color: #ffce9b; */
   position: relative;
-  padding: 50px;
+  padding: 100px 50px;
+  margin: 0 50px;
+  border-radius: 15px;
 }
 
 .portfolio-grid-new#shirts {
-  background-image: linear-gradient(to bottom right, #fd573c, #ffc485);
+  /* background-image: linear-gradient(to bottom right, #fd573c, #ffc485); */
+  background-color: #b8dfc9;
 }
 
 .portfolio-grid-new#grocery {
-  background-image: linear-gradient(to bottom right, #218db8, #a9fcf1);
+  /* background-image: linear-gradient(to bottom right, #218db8, #a9fcf1); */
+  background-color: #7de8c3bf;
 }
 
 .portfolio-grid-new#email {
   /* background-image: linear-gradient(to bottom right, #e9a5a5, #ffdbd4); */
-  background-image: linear-gradient(to bottom right, #298391, #7ed4d0);
+  /* background-image: linear-gradient(to bottom right, #298391, #7ed4d0); */
+  background-color: #537e85b5;
 }
 
 .portfolio-grid-new#niantic {
-  background-image: linear-gradient(to bottom right, #82dfe6, #0be2ac);
+  /* background-image: linear-gradient(to bottom right, #82dfe6, #0be2ac); */
+  background-color: #f548139e;
 }
 
 .portfolio-title {
@@ -941,15 +957,23 @@ span#name-outline {
   color: white;
   line-height: 1em;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding-left: 150px;
 }
+
+.portfolio-title .portfolio-subtitle {
+  font-size: 24px;
+}
+
 .portfolio-mockup {
   grid-area: mockup;
   text-align: center;
 }
 
 .portfolio-mockup img {
-  height: 550px;
+  height: 400px;
 }
 
 .portfolio-section {
@@ -972,7 +996,7 @@ span#name-outline {
   font-weight: lighter;
   font-size: 48px;
   color: black;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: 1em;
 }
 
