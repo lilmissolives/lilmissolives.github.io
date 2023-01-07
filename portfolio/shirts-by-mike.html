@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   
   <!-- Javascript -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -68,7 +69,7 @@
 
   <div class="content-wrapper" id="project">
 
-    <div class="portfolio-section">
+    <div class="portfolio-section" data-aos="fade-in">
       <h1>Overview</h1>
       <div class="portfolio-description">
         <div class="portfolio-table">
@@ -95,7 +96,7 @@
       </div>
     </div>
 
-    <div class="portfolio-section">
+    <div class="portfolio-section" data-aos="fade-in">
       <h1>Introduction</h1>
       <div class="portfolio-description">
         <p>The owner of ShirtsByMike envisioned a website that would connect more with their intended audience,
@@ -104,7 +105,7 @@
       </div>
     </div>
 
-    <div class="portfolio-section">
+    <div class="portfolio-section" data-aos="fade-in">
       <h1>Research</h1>
       <div class="portfolio-description">
         To gather information and understand where the client is coming from, I...
@@ -140,7 +141,7 @@
       </div>
     </div>
 
-    <div class="portfolio-section">
+    <div class="portfolio-section" data-aos="fade-in">
       <h1>User Journey and Empathy Map</h1>
       <div class="portfolio-description">
         <h2>Target User Example</h2>
@@ -183,7 +184,7 @@
       </div>
     </div>
 
-    <div class="portfolio-section">
+    <div class="portfolio-section" data-aos="fade-in">
       <h1>Sketches and Iteration</h1>
       <div class="portfolio-description">
         <p>I explored two different ideas for each page, with each having different elements but accomplishing the same issue. </p>
@@ -246,7 +247,7 @@
       </div>      
     </div>
 
-    <div class="portfolio-section">
+    <div class="portfolio-section" data-aos="fade-in">
       <h1>Design Principles</h1>
       <div class="portfolio-description">
         <h2>Refreshing the brand</h2>
@@ -261,7 +262,7 @@
       </div>
     </div>
 
-    <div class="portfolio-section" id="final-mockups">
+    <div class="portfolio-section" id="final-mockups" data-aos="fade-in">
       <h1>Final Mockups</h1>
       <div class="portfolio-description">
         <h2>Desktop</h2>
@@ -304,7 +305,7 @@
       </div>
     </div>
 
-    <div class="portfolio-section">
+    <div class="portfolio-section" data-aos="fade-in">
       <h1>Summary</h1>
       <div class="portfolio-description">
         <p>
@@ -342,5 +343,14 @@
   <div class="footer-new">
     <div>&copy; Olivia Chiu 2020</div>
   </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1000,
+      once: true,
+    });
+  </script>
 </body>
 </html>

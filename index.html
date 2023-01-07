@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
   <link rel="stylesheet" href="./static/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
   <!-- Javascript -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -78,7 +79,7 @@
     </div>
 
     <div class="project-grid-new" id="basic">
-      <div class="project-grid-card project-item" style="background-image: url('./img/portfolio/on-air/cover.png'); background-color: #435e83; background-size: 130%; background-position-x: -90px;">
+      <div class="project-grid-card project-item" data-aos="fade-in" style="background-image: url('./img/portfolio/on-air/cover.png'); background-color: #435e83; background-size: 130%; background-position-x: -90px;">
         <a href="portfolio/on-air.html">
           <div class="project-overlay">
             <div class="project-title">
@@ -89,7 +90,7 @@
           </div>
         </a>
       </div>
-      <div class="project-grid-card project-item" style="background-image: url('./img/portfolio/niantic/niantic.png'); background-color: #f548139e; background-size: 65%;">
+      <div class="project-grid-card project-item" data-aos="fade-in" style="background-image: url('./img/portfolio/niantic/niantic.png'); background-color: #f548139e; background-size: 65%;">
         <a href="portfolio/niantic.html">
           <div class="project-overlay">
             <div class="project-title">
@@ -100,7 +101,7 @@
           </div>
         </a>
       </div>
-      <div class="project-grid-card project-item" style="background-image: url('./img/portfolio/treehouse/grocery-thumb.png'); background-color: #7de8c3bf; background-size: 40%;">
+      <div class="project-grid-card project-item" data-aos="fade-in" style="background-image: url('./img/portfolio/treehouse/grocery-thumb.png'); background-color: #7de8c3bf; background-size: 40%;">
         <a href="portfolio/grocery-store.html">
           <div class="project-overlay">
             <div class="project-title">
@@ -111,7 +112,7 @@
           </div>
         </a>
       </div>
-      <div class="project-grid-card project-item" style="background-image: url('./img/portfolio/treehouse/shirts-thumb.png'); background-color: #b8dfc9; background-size: 80%;">
+      <div class="project-grid-card project-item" data-aos="fade-in" style="background-image: url('./img/portfolio/treehouse/shirts-thumb.png'); background-color: #b8dfc9; background-size: 80%;">
         <a href="portfolio/shirts-by-mike.html">
           <div class="project-overlay">
             <div class="project-title">
@@ -122,7 +123,7 @@
           </div>
         </a>
       </div>
-      <div class="project-grid-card project-item" style="background-image: url('./img/portfolio/treehouse/wooshmail-desktop.png'); background-color: #537e85b5; background-size: 65%;">
+      <div class="project-grid-card project-item" data-aos="fade-in" style="background-image: url('./img/portfolio/treehouse/wooshmail-desktop.png'); background-color: #537e85b5; background-size: 65%;">
         <a href="portfolio/email-campaign.html">
           <div class="project-overlay">
             <div class="project-title">
@@ -138,5 +139,13 @@
   <div class="footer-new">
     <div>&copy; Olivia Chiu 2020</div>
   </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1000,
+    });
+  </script>
 </body>
 </html>
