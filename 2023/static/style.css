@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "rainyhearts";
+  src: url("./rainyhearts.ttf") format("truetype");
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: "rainyhearts", sans-serif;
+  padding: 50px;
+  height: 100%;
+  margin: 0;
+  background: conic-gradient(from 90deg at 3px 3px, #0000 90deg, #ffffff28 0) 0
+      0/20px 20px,
+    linear-gradient(180deg, #ffebec 34.38%, #b4c8ea 68.75%, #b4c8ea 91.15%);
+  background-attachment: scroll;
+}
+
+.header__columns {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.spacer {
+  width: 28px;
+  height: 0;
+  display: flex;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav-link {
+  line-height: 33px;
+  text-decoration: none;
+}
+
+.header__nav-link:hover {
+  text-decoration: underline;
+}
+
+.header__nav-link p {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #374667;
+  margin: 0;
+}
+
+.header__nav-item {
+  position: relative;
+  text-align: center;
+}
+
+.header__nav-item img {
+  position: relative;
+  top: 10%;
+}
