@@ -61,3 +61,11 @@ body {
   position: relative;
   top: 10%;
 }
+
+.draggable {
+  display: inline-block;
+}
+
+.draggable:hover {
+  cursor: grab;
+}
