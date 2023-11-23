@@ -1,5 +1,11 @@
 $(document).ready(function () {
   addListeners();
+
+  new TypeIt("#hero-about", {
+    strings:
+      "Hi there! I'm Olivia and I design solutions and make them look pretty.",
+    speed: 60,
+  }).go();
 });
 
 var offX;

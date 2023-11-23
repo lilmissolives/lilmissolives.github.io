@@ -18,6 +18,16 @@ body {
   background-attachment: scroll;
 }
 
+.header__nav-item {
+  position: relative;
+  transition: top 0.1s;
+  top: 0;
+}
+
+.header__nav-item:hover {
+  top: -5px;
+}
+
 .header__columns {
   justify-content: space-between;
   align-items: center;
@@ -30,6 +40,10 @@ body {
   display: flex;
 }
 
+.header__logo img {
+  width: 200px;
+}
+
 .header__nav {
   display: flex;
 }
@@ -39,9 +53,9 @@ body {
   text-decoration: none;
 }
 
-.header__nav-link:hover {
+/* .header__nav-link:hover {
   text-decoration: underline;
-}
+} */
 
 .header__nav-link p {
   font-size: 32px;
@@ -60,6 +74,8 @@ body {
 .header__nav-item img {
   position: relative;
   top: 10%;
+  width: 50px;
+  height: 50px;
 }
 
 .draggable {
@@ -68,4 +84,131 @@ body {
 
 .draggable:hover {
   cursor: grab;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
+
+.hero-container {
+  height: 1000px;
+}
+
+#hero-likes {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  z-index: -1;
+}
+
+#hero-about {
+  background-image: url("../img/hero-bubble.png");
+  width: 600px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 1;
+
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+  font-size: 40px;
+  padding: 90px 56px 100px 56px;
+  box-sizing: border-box;
+}
+
+#hero-picture {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  z-index: 0;
+}
+
+#hero-cloud-1 {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+#hero-cloud-2 {
+  position: absolute;
+  top: 95%;
+  left: 65%;
+}
+
+#hero-moon {
+  position: absolute;
+  top: 85%;
+  left: 80%;
+  z-index: -1;
+}
+
+.projects-container {
+  height: 2000px;
+  position: relative;
+}
+
+.projects-container > div {
+  position: absolute;
+}
+
+#project-1 {
+  top: 10%;
+  left: 10%;
+}
+
+#project-1 img {
+  width: 700px;
+}
+
+#project-2 {
+  top: 30%;
+  left: 50%;
+}
+
+#project-2 img {
+  width: 600px;
+}
+
+#project-3 {
+  top: 50%;
+  left: 10%;
+}
+
+#project-3 img {
+  width: 700px;
+}
+
+#project-4 {
+  top: 70%;
+  left: 50%;
+}
+
+#project-4 img {
+  width: 600px;
+}
+
+#project-heart {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+}
+
+#project-cloud-3 {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
+#project-cloud-4 {
+  position: absolute;
+  top: 75%;
+  left: 65%;
 }

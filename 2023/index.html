@@ -2,12 +2,14 @@
 <head>
   <title>Olivia Chiu</title>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="./static/style.css" />
   <script
     src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
     integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
     crossorigin="anonymous"
   ></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   <script src="./static/script.js"></script>
 </head>
 <body>
@@ -19,52 +21,94 @@
           aria-current="page"
           class="header__logo w-inline-block w--current"
         >
-          <img src="./img/logo.png" />
+          <img class="header__nav-item" src="./img/logo.png" />
         </a>
       </div>
       <nav class="header__nav">
         <div class="header__nav-item">
           <a href="#" class="header__nav-link">
-            <img src="https://source.unsplash.com/featured/40x40" />
+            <img src="img/icon-about.svg" />
             <p>about</p>
           </a>
         </div>
         <div class="spacer"></div>
         <div class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            <img src="https://source.unsplash.com/featured/40x40" />
+          <a href="mailto:chiu5olives@gmail.com" class="header__nav-link">
+            <img src="img/icon-email.svg" />
             <p>email</p>
           </a>
         </div>
         <div class="spacer"></div>
         <div class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            <img src="https://source.unsplash.com/featured/40x40" />
+          <a
+            href="https://www.linkedin.com/in/oliveschiu/"
+            target="_blank"
+            class="header__nav-link"
+          >
+            <img src="img/icon-linkedin.svg" />
             <p>linkedin</p>
           </a>
         </div>
         <div class="spacer"></div>
         <div class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            <img src="https://source.unsplash.com/featured/40x40" />
+          <a href="../resume.pdf" target="_blank" class="header__nav-link">
+            <img src="img/icon-resume.svg" />
             <p>résumé</p>
           </a>
         </div>
       </nav>
     </div>
   </header>
-  <h1>Hello world</h1>
-  <p>Lorem ipsum</p>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
-  <div class="draggable"><img src="./img/likes.png" draggable="false" /></div>
+  <div class="hero-container">
+    <div id="hero-likes"><img src="./img/likes.png" /></div>
+    <div id="hero-about"></div>
+    <div id="hero-picture"><img src="./img/about-placeholder.png" /></div>
+    <div id="hero-cloud-1" class="rellax" data-rellax-speed="2">
+      <img src="./img/cloud-1.svg" />
+    </div>
+    <div id="hero-cloud-2" class="rellax" data-rellax-speed="4">
+      <img src="./img/cloud-2.svg" />
+    </div>
+    <div id="hero-moon" class="rellax" data-rellax-speed="4">
+      <img src="./img/moon.svg" />
+    </div>
+  </div>
+  <div class="projects-container">
+    projects go here
+
+    <div id="project-1" data-aos="fade-right">
+      <a href="#1"><img src="./img/project-1.png" /></a>
+    </div>
+    <div id="project-2" data-aos="fade-left">
+      <a href="#2"><img src="./img/project-1.png" /></a>
+    </div>
+    <div id="project-3" data-aos="fade-right">
+      <a href="#3"><img src="./img/project-1.png" /></a>
+    </div>
+    <div id="project-4" data-aos="fade-left">
+      <a href="#4"><img src="./img/project-1.png" /></a>
+    </div>
+    <div id="project-heart" class="rellax" data-rellax-speed="1">
+      <img src="./img/heart-bubble.svg" />
+    </div>
+    <div id="project-cloud-3" class="rellax" data-rellax-speed="2">
+      <img src="./img/cloud-3.svg" />
+    </div>
+    <div id="project-cloud-4" class="rellax" data-rellax-speed="3">
+      <img src="./img/cloud-1.svg" />
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1000,
+      once: true,
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax(".rellax");
+  </script>
 </body>
