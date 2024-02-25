@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+  <title>Olivia Chiu · About Me</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="./static/style.css" />
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script src="./static/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__columns">
+      <div class="header__col">
+        <a
+          href="/"
+          aria-current="page"
+          class="header__logo w-inline-block w--current"
+        >
+          <img class="header__nav-item" src="./img/logo.png" />
+        </a>
+      </div>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <a href="#" class="header__nav-link">
+            <img src="img/icon-about.svg" />
+            <p>about</p>
+          </a>
+        </div>
+        <div class="spacer"></div>
+        <div class="header__nav-item">
+          <a href="mailto:chiu5olives@gmail.com" class="header__nav-link">
+            <img src="img/icon-email.svg" />
+            <p>email</p>
+          </a>
+        </div>
+        <div class="spacer"></div>
+        <div class="header__nav-item">
+          <a
+            href="https://www.linkedin.com/in/oliveschiu/"
+            target="_blank"
+            class="header__nav-link"
+          >
+            <img src="img/icon-linkedin.svg" />
+            <p>linkedin</p>
+          </a>
+        </div>
+        <div class="spacer"></div>
+        <div class="header__nav-item">
+          <a href="../resume.pdf" target="_blank" class="header__nav-link">
+            <img src="img/icon-resume.svg" />
+            <p>résumé</p>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="about-tab-container">
+    <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 1279 861"
+      class="about-tab"
+      id="about-tab-instagram"
+    >
+      <image
+        width="1279"
+        height="861"
+        xlink:href="img/about-tab-instagram.png"
+      ></image>
+      <a xlink:href="" onclick="changeAboutTab(1); return false;">
+        <rect
+          x="278"
+          y="0"
+          fill="#fff"
+          opacity="0"
+          width="174"
+          height="69"
+        ></rect>
+      </a>
+      <a xlink:href="" onclick="changeAboutTab(2); return false;">
+        <rect
+          x="454"
+          y="0"
+          fill="#fff"
+          opacity="0"
+          width="164"
+          height="69"
+        ></rect>
+      </a>
+    </svg>
+    <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 1279 861"
+      class="about-tab"
+      id="about-tab-media"
+    >
+      <image
+        width="1279"
+        height="861"
+        xlink:href="img/about-tab-media.png"
+      ></image>
+      <a xlink:href="" onclick="changeAboutTab(0); return false;">
+        <rect
+          x="0"
+          y="0"
+          fill="#fff"
+          opacity="0"
+          width="163"
+          height="69"
+        ></rect>
+      </a>
+      <a xlink:href="" onclick="changeAboutTab(2); return false;">
+        <rect
+          x="442"
+          y="0"
+          fill="#fff"
+          opacity="0"
+          width="176"
+          height="69"
+        ></rect>
+      </a>
+    </svg>
+    <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 1279 861"
+      class="about-tab"
+      id="about-tab-games"
+    >
+      <image
+        width="1279"
+        height="861"
+        xlink:href="img/about-tab-games.png"
+      ></image>
+      <a xlink:href="" onclick="changeAboutTab(0); return false;">
+        <rect
+          x="0"
+          y="0"
+          fill="#fff"
+          opacity="0"
+          width="165"
+          height="69"
+        ></rect>
+      </a>
+      <a xlink:href="" onclick="changeAboutTab(1); return false;">
+        <rect
+          x="165"
+          y="0"
+          fill="#fff"
+          opacity="0"
+          width="176"
+          height="69"
+        ></rect>
+      </a>
+    </svg>
+  </div>
+  <!-- <div class="tab-contents"></div> -->
+
+  <div class="about-photos-container">
+    <img src="img/listening-to.png" id="listening-to" />
+    <img src="img/about-photos.png" />
+    <div class="photo-carousel">
+      <img src="img/carousel-photo-1.png" />
+      <img src="img/carousel-photo-2.png" />
+      <img src="img/carousel-photo-1.png" />
+      <img src="img/carousel-photo-2.png" />
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1000,
+      once: true,
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax(".rellax");
+  </script>
+</body>

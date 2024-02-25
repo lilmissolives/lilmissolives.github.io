@@ -43,3 +43,16 @@ function divMove(e) {
     selectedElement.style.left = e.clientX - offX + "px";
   }
 }
+
+function changeAboutTab(tabIndex) {
+  if (tabIndex < 0 || tabIndex > 2) {
+    return;
+  }
+
+  var aboutTabs = document.querySelectorAll(".about-tab");
+  for (const aboutTab of aboutTabs) {
+    aboutTab.style.display = "none";
+  }
+  const tabs = ["about-tab-instagram", "about-tab-media", "about-tab-games"];
+  document.getElementById(tabs[tabIndex]).style.display = "block";
+}
