@@ -381,7 +381,7 @@ body {
 
 .project-hero-container {
   position: relative;
-  border: #374667 1px solid;
+  border: #374667 2px solid;
   border-radius: 10px;
   overflow: hidden;
   height: 800px;
@@ -395,7 +395,7 @@ body {
   position: absolute;
   left: 0;
   top: 50px;
-  height: 1px;
+  height: 2px;
   background: #374667;
   content: "";
   width: 100%;
@@ -409,6 +409,10 @@ body {
 
 .centered-img {
   text-align: center;
+}
+
+.centered-img #question {
+  width: 100%;
 }
 
 .about-tab-container {
@@ -524,13 +528,15 @@ body {
   font-size: 18px;
   background-color: white;
   margin-top: 100px;
+  padding-bottom: 100px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
 
 .portfolio-section {
-  padding: 40px 100px;
+  /* padding: 40px 100px; */
+  padding: 40px 180px;
   /* color: black; */
   color: #1a1b1f;
   /* font-family: "Open Sans", sans-serif; */
@@ -644,6 +650,46 @@ body {
   font-size: 36px;
   margin-bottom: 50px;
   line-height: 1em;
+}
+
+#spotlight-onair {
+  background-color: #0a285a;
+  padding: 50px;
+}
+
+.portfolio-spotlight {
+  color: #fff;
+}
+
+.spotlight-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.spotlight-subtitle {
+  text-align: center;
+  margin: 10px;
+}
+
+.spotlight-grid {
+  margin-top: 50px;
+  display: flex;
+}
+
+.spotlight-grid > div {
+  flex: 33%;
+  max-width: 33%;
+  text-align: center;
+  display: inline-block;
+}
+
+.spotlight-grid > div > div {
+  /* text-align: left; */
+  margin-top: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
