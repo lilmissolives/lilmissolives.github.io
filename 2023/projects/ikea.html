@@ -2,6 +2,16 @@
 <head>
   <title>Olivia Chiu · IKEA Redesign</title>
   <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css"
+  />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="../static/style.css" />
   <script
@@ -17,7 +27,7 @@
     <div class="header__columns">
       <div class="header__col">
         <a
-          href="/"
+          href="../"
           aria-current="page"
           class="header__logo w-inline-block w--current"
         >
@@ -63,19 +73,26 @@
   <!-- <div class="tab-contents"> -->
   <div class="project-hero-container" id="project-niantic">
     <div class="project-window-title">IKEA Redesign</div>
-    <img src="../img/window-buttons.png" id="window-buttons" />
+    <img src="../img/window-buttons-2.png" id="window-buttons" />
     <img src="../img/window-background.png" id="window-background" />
     <img src="../img/project-bg-ikea.png" id="project-bg" />
 
     <div class="project-hero-title-grid">
       <div class="project-hero-title-text">
         <h1>IKEA Redesign</h1>
-        <p>Redesigning IKEA's shopping app.</p>
+        <p>
+          Redesigning IKEA's shopping app. Lorem ipsum dolor sit amet
+          consectetur. Elementum turpis pulvinar morbi ut elementum. Risus sed
+          imperdiet vitae ultrices interdum cras fermentum. Sed augue sit semper
+          pulvinar eu. Arcu aliquam quam egestas consectetur magna mus ornare.
+        </p>
       </div>
       <div class="project-hero-mockup">
-        <img src="https://source.unsplash.com/featured/200x300" />
+        <img src="../img/portfolio/ikea/ikea-mockup.png" />
       </div>
     </div>
+
+    <hr id="divider" />
 
     <div class="project-hero-tags-grid">
       <div class="project-hero-tag">
@@ -106,28 +123,295 @@
   <img src="../img/project-hero-container.png" />
   </div> -->
 
-  <div class="project-content-container">
-    <div class="project-content-grid">
-      <div class="project-content-title"><h1>Background</h1></div>
-      <div class="project-content-text">
+  <div class="content-wrapper" id="project">
+    <div class="portfolio-section" data-aos="fade-in">
+      <div class="project-content-grid">
+        <div class="project-content-title"><h1>Background</h1></div>
+        <div class="project-content-text">
+          <p>
+            This was my submission for an Uplabs weekly design challenge, where
+            the prompt was to redesign IKEA's shopping app. I worked on this as
+            a solo project over the span of 2 weeks.
+          </p>
+          <p>
+            IKEA is one of the most popular home furnishing brands globally with
+            its variety of Scandinavian designs to suit a range of living
+            aesthetics with affordability. They have a wide catalog of products
+            on both their website and app — which many shop and order directly
+            from. However, there are some features that could be improved or
+            added to create an even better shopping experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-section" data-aos="fade-in">
+      <div class="centered-img">
+        <img src="../img/portfolio/ikea/question-2.png" />
+      </div>
+    </div>
+
+    <div class="portfolio-section" data-aos="fade-in">
+      <h1>Research</h1>
+      <div class="portfolio-description">
         <p>
-          This was my submission for an Uplabs weekly design challenge, where
-          the prompt was to redesign IKEA's shopping app. I worked on this as a
-          solo project over the span of 2 weeks.
+          My first step into taking on this challenge was downloading the app,
+          using it myself, and taking notes of my impressions and pain points.
         </p>
+
+        <ul>
+          <li>
+            <b>Parity with web experience</b>: The app is missing some features
+            and organized differently from the website, especially when
+            searching for products. For example, in-stock availability is not
+            shown in filter options, and color options for a given item are all
+            displayed separately rather than grouped together.
+          </li>
+          <li>
+            <b>Redundant options</b>: The new experience toggle on the search
+            page seems unnecessary since both options essentially give the same
+            experience/result.
+          </li>
+          <li>
+            <b>In-app scanning feature</b>: I shop in-store at my local IKEA
+            warehouse, and would appreciate an in-app scanner rather than just
+            taking pictures of the item tags using my phone's camera app. The
+            only usage of the camera is for room planning and scanning in-store
+            that only works with certain warehouses. I understand that this is
+            an existing feature in those certain warehouses but I want something
+            that can be feasibly used across all warehouses without the need for
+            QR codes.
+          </li>
+          <li>
+            <b>More intuitive UI</b>: “Customize it” button behavior for some
+            products could be more intuitive - I would rather see all options in
+            one place than a separate pop-up page.
+          </li>
+        </ul>
+
         <p>
-          IKEA is one of the most popular home furnishing brands globally with
-          its variety of Scandinavian designs to suit a range of living
-          aesthetics with affordability. They have a wide catalog of products on
-          both their website and app — which many shop and order directly from.
-          However, there are some features that could be improved or added to
-          create an even better shopping experience.
+          Afterwards, I looked into the app's reviews in the Google Play Store
+          and took note of some of the most common pain points users have
+          mentioned.
+        </p>
+
+        <ul>
+          <li>
+            Frustrating to find certain items because of Swedish naming unless
+            you memorize them
+          </li>
+          <li>
+            Unable to filter for in-stock items when searching, or by stock in
+            specific location
+          </li>
+          <li>
+            Would prefer highlighting unavailable products so they're easier to
+            remove from cart. Only available options are to delete it or save
+            for later.
+          </li>
+        </ul>
+
+        <p>
+          From my research, it seems like the
+          <b>biggest pain point to resolve</b> is the issue of conflicting item
+          availability information between in-store stock and online.
+        </p>
+
+        <p>
+          Since 2020, IKEA has been going through supply chain shortages and
+          limited stock of some of their items. This leads to frustration and
+          confusion from many customers who are seeking to purchase certain
+          items on their website or app only to see it be unavailable
+          indefinitely, despite still being listed online.
         </p>
       </div>
     </div>
 
-    <div class="centered-img">
-      <img src="../img/portfolio/ikea/question.png" />
+    <div class="portfolio-section" data-aos="fade-in">
+      <h1>Ideation</h1>
+      <div class="portfolio-description">
+        <p>
+          As this was meant to be a quick challenge with a deadline, I mostly
+          focused on solving the main pain points I observed while using the app
+          and several improvements to the overall design.
+        </p>
+
+        <p>I identified three areas for improvement:</p>
+
+        <ol>
+          <li>
+            Improve in-stock availability when searching and in shopping cart
+          </li>
+          <li>Utilizing the camera for in person shopping experience</li>
+          <li>
+            Redesign product pages to better present information and utilization
+            of space
+          </li>
+        </ol>
+
+        <p>
+          I researched other commerce apps (Amazon, Target) and looked at
+          inspiration from related ideas on Dribbble and the Figma community,
+          plus some past submissions for similar prompts on Uplabs. Afterwards,
+          I drew up some initial sketches before moving over to Figma to create
+          a set of wireframes.
+        </p>
+      </div>
+
+      <div class="centered-img">
+        <img
+          src="../img/portfolio/ikea/wireframes.png"
+          width="1200px"
+          style="margin: 0"
+        />
+      </div>
+      <div class="img-caption">Wireframes</div>
+    </div>
+
+    <div class="portfolio-section" id="final-mockups" data-aos="fade-in">
+      <h1>Mockups</h1>
+      <div class="portfolio-description">
+        <div class="mobile-grid" id="ikea">
+          <div class="mobile-description">
+            <div class="mobile-title">Home screen</div>
+            <p>
+              View today's featured products in a full-screen, interactive
+              landing page, and browse for inspiration.
+            </p>
+          </div>
+          <!-- <div></div> -->
+          <div class="mobile-video">
+            <video width="450" height="800" autoplay loop muted playsinline>
+              <source src="../../video/ikea/home.mov" type="video/mp4" />
+            </video>
+          </div>
+          <div class="mobile-description">
+            <div class="mobile-title">Search by categories</div>
+            <p>
+              Quickly find the product you're looking for by browsing by
+              categories.
+            </p>
+          </div>
+          <!-- <div></div> -->
+          <div class="mobile-video">
+            <video width="450" height="800" autoplay loop muted playsinline>
+              <source src="../../video/ikea/categories.mov" type="video/mp4" />
+            </video>
+          </div>
+          <div class="mobile-description">
+            <div class="mobile-title">Product details</div>
+            <p>
+              View essential product information at a glance to help you make
+              your decision.
+            </p>
+          </div>
+          <div class="mobile-video">
+            <video width="450" height="800" autoplay loop muted playsinline>
+              <source src="../../video/ikea/alex.mov" type="video/mp4" />
+            </video>
+          </div>
+          <!-- <div class="mobile-video">
+          <video width="450" height="800" autoplay loop muted playsinline>
+            <source src="../../video/onair-warning-2.mov" type="video/mp4" />
+          </video>
+        </div> -->
+          <div class="mobile-description">
+            <div class="mobile-title">Scan tags</div>
+            <p>
+              Use your phone's camera when you're shopping in-store to easily
+              save products as you come across them.
+            </p>
+          </div>
+          <div class="mobile-video">
+            <video width="450" height="800" autoplay loop muted playsinline>
+              <source src="../../video/ikea/camera.mov" type="video/mp4" />
+            </video>
+          </div>
+          <div class="mobile-description">
+            <div class="mobile-title">Shopping cart</div>
+            <p>View the products in your shopping cart and checkout.</p>
+          </div>
+          <div class="mobile-video">
+            <video width="450" height="800" autoplay loop muted playsinline>
+              <source src="../../video/ikea/cart.mov" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <br /><br />
+        <div>
+          <a href="../img/portfolio/ikea/map.png" target="_blank">
+            <img src="../img/portfolio/ikea/map.png" />
+          </a>
+        </div>
+        <br />
+        <div class="img-caption">User flow map of interactions</div>
+      </div>
+    </div>
+
+    <div class="portfolio-section" data-aos="fade-in">
+      <h1>Takeaways</h1>
+      <div class="portfolio-description">
+        <h2>What I learned</h2>
+        <p>
+          One of the biggest things I've learned was how to connect and
+          integrate online and physical shopping elements. As most of IKEA's
+          revenue comes from in-store shopping, there could be more digital
+          integration with walking around the showroom to the warehouse for
+          example. I find that most shoppers, including myself, will take photos
+          of tags for products I am interested in to save for later. However,
+          this means these photos will be saved on my phone's storage and
+          possibly forgotten, whereas the IKEA app can easily scan the product I
+          want and save to a list for viewing later, view all color options, or
+          directly add to my cart. Not only does this make for a more organized
+          and streamlined shopping experience for customers, this could also
+          lead to increased sales and conversion rates for IKEA.
+        </p>
+
+        <p>
+          One small thing that I learned in this project was how to design based
+          off of an existing design system - in other words, according to the
+          challenge's prompt: “keeping their sleek and Scandinavian approach in
+          mind”. I had learned to do this in my previous internships, however
+          this time I did not have the official components on hand. Thankfully,
+          IKEA's design system is very straightforward with its blue and yellow
+          color scheme and single font, Noto Sans.
+        </p>
+
+        <h2>What I would improve for next time</h2>
+        <p>
+          As this was a short project, I only focused on a few areas I saw
+          immediately that could use improvement. If given more time, I would
+          create the “Scan tag camera” screen and connect it to the “Add to
+          list/Favorites” screens.
+        </p>
+        <p>
+          Another interaction I would consider is if a user wanted to add an out
+          of stock item from the product page. Based on current interactions in
+          the app, IKEA allows users to add out-of-stock items to their cart,
+          but leads to later frustration when they find out they can't purchase
+          it during checkout. I would add a feature that notifies users that the
+          item is out of stock, and gives them an option to notify them again
+          when it's back in-stock.
+        </p>
+        <p>
+          I noted that one user in a review mentioned that they had a hard time
+          shopping at IKEA because of the Swedish naming system. I felt that it
+          is its own challenge that can be explored well on its own that a
+          short-term project tackling various features would not be able to
+          accomplish fully. Hence why I added names of the products below in the
+          search history section in the Explore page – it may help jog some
+          memory for users. This is also why I added examples of search queries
+          on the search bar rather than their original “what are you looking
+          for?”, which I found rather vague.
+        </p>
+        <p>
+          Overall, I thought this was a fun short challenge for me to study an
+          existing brand and do research on how I can make their app even better
+          for their customers. This is the first project where I take a real
+          existing brand's app (and one I use personally) to find ways to
+          improve the experience.
+        </p>
+      </div>
     </div>
   </div>
 
