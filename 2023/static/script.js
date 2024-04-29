@@ -2,8 +2,7 @@ $(document).ready(function () {
   addListeners();
 
   new TypeIt("#hero-about", {
-    strings:
-      "Hi there! I'm Olivia and I design solutions and make them look pretty.",
+    strings: `Hi there! I'm Olivia and I <span id="hero-text-pink">design solutions</span> and make them <span id="hero-text-pink">look pretty</span>.`,
     speed: 60,
   }).go();
 });
@@ -55,4 +54,15 @@ function changeAboutTab(tabIndex) {
   }
   const tabs = ["about-tab-instagram", "about-tab-media", "about-tab-games"];
   document.getElementById(tabs[tabIndex]).style.display = "block";
+}
+
+function changeHeroFocus(focusPicture) {
+  console.log("focusPicture", focusPicture);
+  if (focusPicture) {
+    document.getElementById("hero-likes").style.zIndex = 1;
+    document.getElementById("hero-picture").style.zIndex = 2;
+  } else {
+    document.getElementById("hero-likes").style.zIndex = 2;
+    document.getElementById("hero-picture").style.zIndex = 1;
+  }
 }
