@@ -673,18 +673,19 @@ body {
 
 .portfolio-section-horizontal {
   display: flex;
-  margin: 100px 0px;
+  /* margin: 100px 0px; */
+  padding-bottom: 100px;
 }
 
 .portfolio-section-horizontal > .portfolio-section-horizontal-title {
-  flex: 25%;
-  max-width: 25%;
+  flex: 40%;
+  max-width: 40%;
   font-size: 40px;
 }
 
 .portfolio-section-horizontal > .portfolio-section-horizontal-description {
-  flex: 75%;
-  max-width: 75%;
+  flex: 60%;
+  max-width: 60%;
   display: flex;
   align-items: center;
 }
