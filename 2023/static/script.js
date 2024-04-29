@@ -2,9 +2,16 @@ $(document).ready(function () {
   addListeners();
 
   new TypeIt("#hero-about", {
-    strings: `Hi there! I'm Olivia and I <span id="hero-text-pink">design solutions</span> and make them <span id="hero-text-pink">look pretty</span>.`,
-    speed: 60,
-  }).go();
+    speed: 70,
+  })
+    .type("Hi there!", { delay: 100 })
+    .pause(1000)
+    .type(" I'm Olivia")
+    .pause(200)
+    .type(
+      ` and I <span id="hero-text-pink">design solutions</span> and make them <span id="hero-text-pink">look pretty</span>.`
+    )
+    .go();
 });
 
 var offX;
