@@ -350,6 +350,10 @@ body {
   animation-name: bounce-right;
 }
 
+.project-hero-mockup img#pgo {
+  padding: 50px 0;
+}
+
 @keyframes bounce-left {
   0% {
     opacity: 0;
@@ -549,13 +553,13 @@ body {
 
 .about-tab-container {
   text-align: center;
-  padding: 0 100px;
+  padding: 0 10%;
   /* width: 50%; */
 }
 
 .about-photos-container {
   margin-top: 50px;
-  padding: 100px;
+  padding: 100px 10%;
   position: relative;
 }
 
