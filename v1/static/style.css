@@ -1,0 +1,1503 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.7em;
+  color: #7f8c8d;
+  font-size: 13px;
+  font-family: "Stellar", "Raleway";
+  background-color: white;
+}
+
+@font-face {
+  font-family: "Stellar";
+  src: url("fonts/Stellar-Light.woff2") format("woff2"),
+    url("fonts/Stellar-Light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Stellar";
+  src: url("fonts/Stellar-Medium.woff2") format("woff2"),
+    url("fonts/Stellar-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Stellar";
+  src: url("fonts/Stellar-Regular.woff2") format("woff2"),
+    url("fonts/Stellar-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Stellar";
+  src: url("fonts/Stellar-Bold.woff2") format("woff2"),
+    url("fonts/Stellar-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.pure-g [class*="pure-u"] {
+  font-family: "Stellar", "Raleway";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  color: #34495e;
+}
+
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+.l-box {
+  padding: 1em;
+}
+
+.l-box-lrg {
+  padding: 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.is-center {
+  text-align: center;
+}
+
+/*
+ * -- PURE FORM STYLES --
+ * Style the form inputs and labels
+ */
+.pure-form label {
+  margin: 1em 0 0;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.pure-form input[type] {
+  border: 2px solid #ddd;
+  box-shadow: none;
+  font-size: 100%;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/*
+ * -- PURE BUTTON STYLES --
+ * I want my pure-button elements to look a little different
+ */
+.pure-button {
+  background-color: #1f8dd6;
+  color: white;
+  padding: 0.5em 2em;
+  border-radius: 5px;
+}
+
+a.pure-button-primary {
+  background: white;
+  color: #1f8dd6;
+  border-radius: 5px;
+  font-size: 120%;
+}
+
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+
+.home-menu {
+  padding: 0.5em;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.home-menu {
+  background: #2d3e50;
+}
+.pure-menu.pure-menu-fixed {
+  /* Fixed menus normally have a border at the bottom. */
+  border-bottom: none;
+  /* I need a higher z-index here because of the scroll-over effect. */
+  z-index: 4;
+  white-space: normal;
+}
+
+.home-menu .pure-menu-heading {
+  color: white;
+  font-weight: 400;
+  font-size: 120%;
+  text-transform: none;
+}
+
+.home-menu .pure-menu-selected a {
+  color: white;
+}
+
+.home-menu a {
+  color: #6fbef3;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+  background: none;
+  border: none;
+  color: #aecfe5;
+}
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+
+.splash-container {
+  background-image: url("../img/olives-pattern.png");
+  background-size: 4000px;
+  z-index: 1;
+  overflow: hidden;
+  /* The following styles are required for the "scroll-over" effect */
+  width: 100%;
+  height: 88%;
+  top: 0;
+  left: 0;
+  position: fixed !important;
+}
+
+.splash {
+  /* absolute center .splash within .splash-container */
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  color: #455a64;
+}
+
+/* This is the main heading that appears on the blue section */
+.splash-head {
+  font-size: 400%;
+  font-weight: bold;
+  /* color: white; */
+  /* padding: 1em 1.6em; */
+  line-height: 1em;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+  /* color: white; */
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  font-size: 150%;
+}
+
+/*
+ * -- CONTENT STYLES --
+ * This represents the content area (everything below the blue section)
+ */
+.content-wrapper {
+  /* These styles are required for the "scroll-over" effect */
+  /* position: absolute;
+    top: 100px;
+    width: 100%; */
+  /* min-height: 12%; */
+  /* z-index: 2;
+    background: white; */
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header-wrapper {
+  /* max-width: 1200px;
+  margin: auto; */
+  margin-left: 10px;
+  margin-right: 10px;
+  /* margin-bottom: 100px; */
+}
+
+.content-wrapper#project {
+  /* top: 15%;
+  max-width: 1600px; */
+  top: 15%;
+  max-width: unset;
+}
+
+.content-wrapper#project {
+  font-size: 18px;
+}
+
+/* We want to give the content area some more padding */
+.content {
+  padding: 1em;
+  overflow: hidden;
+}
+
+/* This is the class used for the main content headers (<h2>) */
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* This is a modifier class used when the content-head is inside a ribbon */
+.content-head-ribbon {
+  color: white;
+}
+
+.content-subhead {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/* This is the class used for the dark-background areas. */
+.ribbon {
+  /* background: #2d3e50; */
+  /* color: #aaa; */
+}
+
+/* This is the class used for the footer */
+.footer {
+  background: #111;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 48em) {
+  /* We increase the body font size */
+  body {
+    font-size: 16px;
+  }
+
+  /* We can align the menu header to the left, but float the
+    menu items to the right. */
+  .home-menu {
+    text-align: left;
+  }
+
+  .home-menu ul {
+    float: right;
+  }
+
+  /* We increase the height of the splash-container */
+  /*    .splash-container {
+        height: 500px;
+    }*/
+
+  /* We decrease the width of the .splash, since we have more width
+    to work with */
+  /* .splash {
+        width: 50%;
+        height: 50%;
+    } */
+
+  /* .splash-head {
+        font-size: 250%;
+    } */
+
+  /* We remove the border-separator assigned to .l-box-lrg */
+  .l-box-lrg {
+    border: none;
+  }
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
+/*
+@media (min-width: 78em) {
+    .splash-head {
+        font-size: 400%;
+    }
+    
+    .splash-subhead {
+      font-size: 125%;
+      font-weight: bold;
+    }
+}*/
+
+/* unused, but maybe useful */
+/* .label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: #2d3e50;
+} */
+
+/*
+ * BEGIN CUSTOM CSS
+ */
+
+#header {
+  text-align: center;
+}
+
+#header #topNav nav ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+@media screen and (min-width: 64em) {
+  #header {
+    height: 100px;
+    margin: 50px 50px 0 50px;
+  }
+
+  #header #logo {
+    float: left;
+  }
+
+  #header #topNav {
+    float: right;
+  }
+
+  #header #topNav nav {
+    float: left;
+  }
+
+  #header #topNav nav ul {
+    list-style-type: none;
+    line-height: inherit;
+    font-size: inherit;
+  }
+
+  #header #topNav nav li {
+    float: left;
+    position: relative;
+    margin-left: 30px;
+  }
+}
+
+#header #logo a {
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 0.08em;
+  transition: 0.3s ease;
+}
+
+#header #logo a:hover {
+  color: #666;
+}
+
+#header #topNav nav li a {
+  text-decoration: none;
+  color: #999;
+  letter-spacing: 0.05em;
+  transition: 0.3s ease;
+}
+
+#header #topNav nav li a:hover {
+  color: #222;
+}
+
+#header #topNav nav li a.active {
+  color: #222;
+}
+
+.placeholder-img {
+  height: 200px;
+}
+
+.placeholder-img#icon-palette {
+  height: 180px;
+  margin-top: 20px;
+}
+
+.splash-subhead a,
+.credits a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.splash-subhead a:hover,
+.credits a:hover {
+  text-decoration: underline;
+}
+
+#what-i-do {
+  margin-top: 100px;
+  position: relative;
+}
+
+#what-i-do h2#title {
+  margin-bottom: -30px;
+}
+
+#what-i-do p {
+  width: 80%;
+  display: inline-block;
+  color: #333333;
+}
+
+#what-i-do .ethan {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -50;
+  right: -50;
+  background-image: url("../img/olives-pattern.png");
+  z-index: -1;
+  filter: blur(5px);
+}
+
+div#project img.carousel-cell {
+  width: 100%;
+}
+
+div#project div.l-box {
+  padding: 50px;
+}
+
+.project-title {
+  text-align: center;
+  padding: 1em;
+  letter-spacing: 0.05em;
+}
+
+.project-subtitle {
+  font-size: 14px;
+}
+
+#project-grid {
+  /* max-width: 1200px;
+  margin: auto; */
+}
+
+.project-section {
+  padding-top: 20px;
+}
+
+.project-section h2 {
+  /* margin-top: 50px; */
+  margin-left: 50px;
+  font-weight: normal;
+  font-size: 1.8em;
+  color: #000;
+  /* text-align: center;
+  letter-spacing: 0.1em; */
+}
+
+#project-thumb {
+  text-align: center;
+}
+
+#project-thumb img {
+  display: inline;
+  height: 300px;
+  object-fit: cover;
+  width: 300px;
+  transition: 0.5s ease;
+}
+
+#project-thumb a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#project-thumb a:hover img {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.5;
+}
+
+.project-description p {
+  padding: 20px 0px 20px 0px;
+  font-size: 1.1em;
+}
+
+.bio {
+  font-family: "Work Sans";
+  letter-spacing: 0px;
+}
+
+.bio h1 {
+  font-family: "Stellar";
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1em;
+}
+
+@media screen and (min-width: 64em) {
+  .bio {
+    width: 90%;
+  }
+}
+
+.project-description a {
+  text-decoration: none;
+}
+
+.project-description img.logo {
+  width: 40px;
+  transition: 0.5s ease;
+}
+
+.project-description img.logo:hover {
+  opacity: 0.5;
+}
+
+.project-description img.logo#facebook {
+  opacity: 0.55;
+  margin-left: 5px;
+}
+
+.project-description img.logo#facebook:hover {
+  opacity: 0.3;
+}
+
+.project-container {
+  /* height: 100%;
+  float: left;
+  padding: 0; */
+  position: relative;
+  background-color: #333333;
+}
+
+.project-container:hover img {
+  opacity: 0.3;
+}
+
+.project-container:hover .project-label {
+  opacity: 1;
+}
+
+.project-container img {
+  padding: 0;
+  width: 100%;
+  display: block;
+  opacity: 1;
+}
+
+.project-container img,
+.project-label {
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+.project-label {
+  position: absolute;
+  color: white;
+  left: 0;
+  top: 45%;
+  right: 0;
+  bottom: 0;
+  font-size: 1.75em;
+  text-align: center;
+  opacity: 0;
+}
+
+#portrait {
+  text-align: center;
+  padding: 0;
+}
+
+#portrait img {
+  width: 100%;
+}
+
+@media screen and (min-width: 64em) {
+  #portrait {
+    text-align: right;
+    position: relative;
+  }
+
+  #portrait img {
+    width: 500px;
+    position: absolute;
+    margin: auto;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/** BEGIN responsive image grid **/
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-column#larger {
+  flex: 30%;
+  max-width: 30%;
+}
+
+.gallery-column#smaller {
+  flex: 20%;
+  max-width: 20%;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.intro {
+  color: #000000;
+  margin: 100px 50px 100px 50px;
+}
+
+.intro #title {
+  font-size: 4em;
+  margin-bottom: 30px;
+  line-height: 1.3em;
+}
+
+.intro #subtitle {
+  font-size: 2em;
+  margin-bottom: 30px;
+  line-height: 1.3em;
+  font-weight: lighter;
+}
+
+span#name-outline {
+  color: black;
+  text-decoration: none;
+  border-bottom: 15px solid #c5dbda;
+  line-height: 20px;
+  display: inline-block;
+  transition: width 2s ease-out;
+  width: 0px;
+}
+
+.name-link {
+  cursor: pointer;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+/* Static sidebar */
+.sidenav {
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 200px;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav div {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.sidenav a:hover {
+  color: #aaa;
+}
+
+.section-divider {
+  background-color: #c5dbda;
+  width: 80px;
+  height: 6px;
+  margin-left: 50px;
+}
+
+.sidenav-mark {
+  background-color: #c5dbda;
+  width: 20px;
+  height: 5px;
+  position: absolute !important;
+  left: 0;
+  top: 0.5em;
+  visibility: hidden;
+}
+
+/* New portfolio grid */
+.project-shirts {
+  grid-area: shirt;
+  background-color: #ffce9b;
+}
+.project-grocery {
+  grid-area: grocery;
+  background-color: #a7d2db;
+}
+.project-wooshmail {
+  grid-area: woosh;
+  background-color: #ffdbd4;
+}
+.project-niantic {
+  grid-area: grocery;
+  background-color: #ffb74a;
+}
+
+.project-grid-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  grid-gap: 50px;
+  grid-template-rows: 400px;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-grid-card:hover {
+  transform: scale(1.015);
+}
+
+.project-grid-card-img {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.project-grid-label {
+  font-weight: lighter;
+  text-align: left;
+  color: #420;
+}
+
+.project-grid-label-title {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.project-grid-label-subtitle {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.project-grid-new {
+  display: grid;
+  grid-gap: 10px;
+  margin: 50px;
+}
+
+.project-grid-new a {
+  text-decoration: none;
+}
+
+.project-grid-new#ux {
+  grid-gap: 50px;
+}
+
+.project-grid-new#basic {
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 500px;
+}
+
+.project-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.project-grid-new .project-grid-card {
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  /* display: flex; */
+  align-items: center;
+  position: relative;
+
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.project-grid-new img {
+  width: 100%;
+  overflow: hidden;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #00000088;
+  border-radius: 10px;
+}
+
+.project-grid-new > div:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay .project-title {
+  font-size: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: lighter;
+  line-height: 1em;
+}
+
+.project-overlay .project-title hr {
+  width: 5%;
+}
+
+.project-overlay .project-subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.portfolio-grid-new {
+  display: grid;
+  grid-template-areas: "title title mockup mockup";
+  /* background-color: #ffce9b; */
+  position: relative;
+  padding: 100px 50px;
+  margin: 0 50px;
+  border-radius: 15px;
+}
+
+.portfolio-grid-new#shirts {
+  /* background-image: linear-gradient(to bottom right, #fd573c, #ffc485); */
+  background-color: #b8dfc9;
+}
+
+.portfolio-grid-new#grocery {
+  /* background-image: linear-gradient(to bottom right, #218db8, #a9fcf1); */
+  background-color: #7de8c3bf;
+}
+
+.portfolio-grid-new#email {
+  /* background-image: linear-gradient(to bottom right, #e9a5a5, #ffdbd4); */
+  /* background-image: linear-gradient(to bottom right, #298391, #7ed4d0); */
+  background-color: #537e85b5;
+}
+
+.portfolio-grid-new#niantic {
+  /* background-image: linear-gradient(to bottom right, #82dfe6, #0be2ac); */
+  background-color: #f548139e;
+}
+
+.portfolio-grid-new#onair {
+  background-color: #0a285a;
+  background-image: url("../img/portfolio/on-air/cover.png");
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+  height: 600px;
+}
+
+.portfolio-grid-new#ikea {
+  background-color: #0a285a;
+  background-image: url("../img/portfolio/ikea/header.png");
+  background-repeat: no-repeat;
+  /* background-position: right 0px center; */
+  height: 600px;
+}
+
+.portfolio-title {
+  grid-area: title;
+  padding-left: 20px;
+  font-size: 50px;
+  color: white;
+  line-height: 1em;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* padding-left: 150px; */
+  /* text-shadow: 1px 1px black; */
+}
+
+.portfolio-title .portfolio-subtitle {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+.portfolio-mockup {
+  grid-area: mockup;
+  text-align: center;
+}
+
+.portfolio-mockup img {
+  height: 400px;
+}
+
+.portfolio-section {
+  padding: 40px 250px;
+  color: black;
+  font-family: "Open Sans";
+  font-weight: lighter;
+}
+
+.portfolio-section-horizontal {
+  display: flex;
+  margin: 100px 0px;
+}
+
+.portfolio-section-horizontal > .portfolio-section-horizontal-title {
+  flex: 25%;
+  max-width: 25%;
+  font-size: 40px;
+}
+
+.portfolio-section-horizontal > .portfolio-section-horizontal-description {
+  flex: 75%;
+  max-width: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.centered-img {
+  text-align: center;
+}
+
+.centered-img img {
+  text-align: center;
+  max-width: 80% !important;
+  margin: 50px 0px;
+}
+
+#spotlight-onair {
+  background-color: #0a285a;
+  padding: 50px;
+}
+
+.portfolio-spotlight {
+  color: #fff;
+}
+
+.spotlight-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.spotlight-subtitle {
+  text-align: center;
+  margin: 10px;
+}
+
+.spotlight-grid {
+  margin-top: 50px;
+  display: flex;
+}
+
+.spotlight-grid > div {
+  flex: 33%;
+  max-width: 33%;
+  text-align: center;
+  display: inline-block;
+}
+
+.spotlight-grid > div > div {
+  /* text-align: left; */
+  margin-top: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .portfolio-section:nth-of-type(2n) {
+  background-color: #c5dbda4d;
+} */
+
+.portfolio-section:first-of-type {
+  padding-top: 80px;
+}
+
+.portfolio-section h1 {
+  font-family: "Stellar";
+  font-weight: lighter;
+  font-size: 48px;
+  color: black;
+  /* text-transform: uppercase; */
+  line-height: 1em;
+}
+
+.portfolio-section h2 {
+  font-family: "Stellar";
+  font-weight: normal;
+  font-size: 28px;
+  color: black;
+  margin-top: 50px;
+  /* text-transform: uppercase; */
+  line-height: 1em;
+}
+
+.portfolio-section h3 {
+  font-family: "Stellar";
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  margin-top: 50px;
+  line-height: 1em;
+}
+
+/* .portfolio-section .portfolio-description {
+  font-size: 16px;
+} */
+
+.portfolio-description img {
+  width: 100%;
+}
+
+.portfolio-description .color-grid {
+  display: grid;
+  grid-template-areas:
+    "c1 c2 c3 c4 c5 c6"
+    "t1 t2 t3 t4 t5 t6";
+  position: relative;
+  grid-gap: 30px;
+  /* padding: 50px 0px; */
+}
+
+.color-grid .color-grid-item {
+  width: 150px;
+  height: 75px;
+}
+
+.color-grid .color-code {
+  color: #888888;
+}
+
+div.color1 {
+  grid-area: c1;
+}
+
+div.color2 {
+  grid-area: c2;
+}
+
+div.color3 {
+  grid-area: c3;
+}
+
+div.color4 {
+  grid-area: c4;
+}
+
+div.color5 {
+  grid-area: c5;
+}
+
+div.color6 {
+  grid-area: c6;
+}
+
+div.text1 {
+  grid-area: t1;
+}
+
+div.text2 {
+  grid-area: t2;
+}
+
+div.text3 {
+  grid-area: t3;
+}
+
+div.text4 {
+  grid-area: t4;
+}
+
+div.text5 {
+  grid-area: t5;
+}
+
+div.text6 {
+  grid-area: t6;
+}
+
+.copyright {
+  color: #ccc;
+  font-size: 16px;
+  font-family: "Raleway";
+}
+
+.img-caption {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 50px;
+}
+
+/* Clear floats after the columns */
+.portfolio-table {
+  display: grid;
+  grid-template-columns: 66% 33%;
+  position: relative;
+  grid-gap: 30px;
+}
+
+.mobile-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.mobile-grid#woosh {
+  grid-template-columns: 30% 70%;
+}
+
+.mobile-grid#onair .mobile-video {
+  margin: 20px 0;
+}
+
+.mobile-grid#ikea .mobile-video {
+  margin: 20px 0;
+}
+
+.mobile-grid#ikea video {
+  clip-path: inset(1px 1px);
+}
+
+.mobile-grid .mobile-description {
+  margin: auto 0 auto 0;
+}
+
+.mobile-grid .mobile-video {
+  text-align: right;
+  overflow: hidden;
+}
+
+.mobile-grid .mobile-video video {
+  width: 100%;
+}
+
+.mobile-grid#woosh video {
+  width: 130%;
+  position: relative;
+  left: -50px;
+  z-index: -1;
+}
+
+.mobile-grid .mobile-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+  line-height: 1em;
+}
+
+.portfolio-slideshow {
+  padding: 100px;
+}
+
+.portfolio-slideshow .carousel-wrapper {
+  width: 100%;
+  height: 700px;
+  margin-right: 10px;
+}
+
+.portfolio-slideshow .carousel-cell {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  width: unset !important;
+}
+
+.social-icon-linkedin {
+  padding: 20px;
+}
+
+.social-icon-behance {
+  padding: 10px;
+}
+
+.footer-new {
+  /* display: grid;
+  grid-template-columns: 50% 50%;
+  width: 80%; */
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-new .footer-social {
+  text-align: right;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #222;
+}
+
+span#happy-face {
+  font-family: "Work Sans";
+  font-weight: lighter;
+}
+
+#project-illustration img {
+  width: 100%;
+}
+
+#project-illustration .project-description {
+  padding-top: 100px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.hidden-thing {
+  opacity: 0;
+}
+
+.back-to-portfolio {
+  text-align: center;
+}
+
+.back-to-portfolio a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+.back-to-portfolio a:hover {
+  color: #222;
+}
+
+.btn-jump-to-final {
+  background-color: white;
+  color: #a5c7c6;
+  border: 2px solid #a5c7c6; /* Green */
+  /* border: none; */
+  /* color: white; */
+  padding: 10px 32px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 100px;
+  transition-duration: 0.2s;
+}
+
+.btn-jump-to-final:hover {
+  background-color: #a5c7c6; /* Green */
+  color: white;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* disabled */
+/* @media (max-width: 72em) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  
+  .gallery-column#larger {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .gallery-column#smaller {
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 64em) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .gallery-column#larger {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .gallery-column#smaller {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .portfolio-grid-new {
+    grid-template-areas:
+      "mockup"
+      "title";
+  }
+
+  .portfolio-mockup img {
+    width: 100%;
+    margin-bottom: 50px;
+    height: auto;
+  }
+
+  .project-grid-new#basic {
+    grid-template-columns: 100%;
+    grid-auto-rows: 500px;
+    grid-gap: 20px;
+  }
+
+  .project-grid-new#ux {
+    grid-template-areas:
+      "shirt"
+      "grocery"
+      "woosh";
+    margin: 20px;
+    grid-gap: 20px;
+  }
+
+  .project-grid-card {
+    /* display: grid; */
+    grid-template-columns: 30% 70%;
+    /* position: relative; */
+    grid-gap: 20px;
+    grid-template-rows: 200px;
+    /* transition: all 0.2s ease-in-out; */
+    padding: 20px !important;
+  }
+
+  .project-grid-label {
+    padding-right: 10px;
+  }
+
+  .project-grid-label-title {
+    font-size: 32px;
+  }
+
+  .project-grid-label-subtitle {
+    font-size: 16px;
+  }
+
+  .portfolio-section {
+    padding: 40px;
+  }
+
+  .portfolio-description .color-grid {
+    grid-template-areas:
+      "c1"
+      "t1"
+      "c2"
+      "t2"
+      "c3"
+      "t3"
+      "c4"
+      "t4"
+      "c5"
+      "t5"
+      "c6"
+      "t6";
+    /* position: relative;
+    grid-gap: 30px; */
+  }
+
+  .color-grid .color-grid-item {
+    width: 300px;
+    height: 150px;
+  }
+
+  .mobile-grid {
+    grid-template-columns: 100%;
+  }
+
+  .mobile-grid#woosh {
+    grid-template-columns: 100%;
+  }
+
+  .mobile-grid .mobile-description {
+    padding-top: 50px;
+  }
+
+  .header-wrapper {
+    margin-top: 40px;
+  }
+
+  .back-to-top {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 85em) {
+  .sidenav {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 85em) {
+  a.active .sidenav-mark {
+    visibility: visible;
+  }
+}
+
+/** END responsive image grid **/
