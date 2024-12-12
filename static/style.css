@@ -559,6 +559,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   height: 800px;
+  margin: 0 50px;
 
   /* TODO: expiriment with this */
   /* position: sticky;
