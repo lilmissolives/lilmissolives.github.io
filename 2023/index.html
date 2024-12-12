@@ -61,60 +61,73 @@
     </div>
   </header>
   <div class="hero-container">
-    <div id="hero-likes">
-      <img
-        src="./img/who-what-where.png"
-        onclick="changeHeroFocus(false); return false;"
-      />
-    </div>
-    <div id="hero-about"></div>
     <div id="hero-picture">
       <img
-        src="./img/olives-paint-2.png"
+        id="hero-picture-img"
+        src="./img/olives-paint-3.png"
         onclick="changeHeroFocus(true); return false;"
       />
-    </div>
-    <div id="hihihi" class="rellax" data-rellax-speed="2">
-      <img src="./img/hihihi.png" />
-    </div>
-    <div id="hero-cloud-1" class="rellax" data-rellax-speed="2">
-      <img src="./img/cloud-1.1.png" />
-    </div>
-    <div id="hero-cloud-2" class="rellax" data-rellax-speed="4">
-      <img src="./img/cloud-2.1.svg" />
+      <div id="hero-about"></div>
+      <div id="hero-likes">
+        <img
+          id="hero-likes-img"
+          src="./img/who-what-where-2.png"
+          onclick="changeHeroFocus(false); return false;"
+        />
+      </div>
+      <div id="hihihi" class="rellax" data-rellax-speed="2">
+        <img src="./img/hihihi.png" />
+      </div>
+      <div id="hero-cloud-1" class="rellax" data-rellax-speed="2">
+        <img src="./img/cloud-1.1.png" />
+      </div>
+      <div id="hero-cloud-2" class="rellax" data-rellax-speed="4">
+        <img src="./img/cloud-2.1.svg" />
+      </div>
     </div>
     <!-- <div id="hero-moon" class="rellax" data-rellax-speed="4">
       <img src="./img/moon.svg" />
     </div> -->
   </div>
   <div class="projects-container">
-    <div id="project-1" data-aos="fade-up">
-      <a href="projects/niantic.html"
-        ><img src="./img/project-feature-niantic.png" id="project-img"
-      /></a>
+    <div id="project-1">
+      <div data-aos="fade-up">
+        <a href="projects/niantic.html"
+          ><img src="./img/project-feature-niantic.png" id="project-img"
+        /></a>
+      </div>
+
+      <div id="project-2">
+        <div data-aos="fade-up">
+          <a href="projects/ikea.html"
+            ><img src="./img/project-feature-ikea.png" id="project-img"
+          /></a>
+        </div>
+      </div>
+
+      <div id="project-3">
+        <div data-aos="fade-up">
+          <a href="projects/on-air.html"
+            ><img src="./img/project-feature-on-air.png" id="project-img"
+          /></a>
+        </div>
+      </div>
+
+      <div id="project-heart" class="rellax" data-rellax-speed="1">
+        <img src="./img/heart-bubble-2.png" />
+      </div>
+
+      <div id="project-cloud-3" class="rellax" data-rellax-speed="2">
+        <img src="./img/cloud-3.1.png" />
+      </div>
+      <div id="project-cloud-4" class="rellax" data-rellax-speed="3">
+        <img src="./img/cloud-pair.png" />
+      </div>
     </div>
-    <div id="project-2" data-aos="fade-up">
-      <a href="projects/ikea.html"
-        ><img src="./img/project-feature-ikea.png" id="project-img"
-      /></a>
-    </div>
-    <div id="project-3" data-aos="fade-up">
-      <a href="projects/on-air.html"
-        ><img src="./img/project-feature-on-air.png" id="project-img"
-      /></a>
-    </div>
+
     <!-- <div id="project-4" data-aos="fade-up">
       <a href="#4"><img src="./img/project-1.png" id="project-img" /></a>
     </div> -->
-    <div id="project-heart" class="rellax" data-rellax-speed="1">
-      <img src="./img/heart-bubble-2.png" />
-    </div>
-    <div id="project-cloud-3" class="rellax" data-rellax-speed="2">
-      <img src="./img/cloud-3.1.png" />
-    </div>
-    <div id="project-cloud-4" class="rellax" data-rellax-speed="3">
-      <img src="./img/cloud-pair.png" />
-    </div>
   </div>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

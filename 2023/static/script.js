@@ -66,10 +66,10 @@ function changeAboutTab(tabIndex) {
 function changeHeroFocus(focusPicture) {
   console.log("focusPicture", focusPicture);
   if (focusPicture) {
-    document.getElementById("hero-likes").style.zIndex = 1;
-    document.getElementById("hero-picture").style.zIndex = 2;
+    document.getElementById("hero-likes-img").style.zIndex = 1;
+    document.getElementById("hero-picture-img").style.zIndex = 2;
   } else {
-    document.getElementById("hero-likes").style.zIndex = 2;
-    document.getElementById("hero-picture").style.zIndex = 1;
+    document.getElementById("hero-likes-img").style.zIndex = 2;
+    document.getElementById("hero-picture-img").style.zIndex = 1;
   }
 }
